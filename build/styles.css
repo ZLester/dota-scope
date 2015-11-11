@@ -1,6 +1,7 @@
 body {
   background-color: #000;
   color: #FFF;
+  font-family: 'Marcellus', serif;
 }
 
 .title {
@@ -9,6 +10,7 @@ body {
 
 .titleWrapper {
   width: 100%;
+  min-width: 205px;
   text-align: center;
 }
 
@@ -54,6 +56,7 @@ body {
 
 .heroHoverWrapper {
   width: 100%;
+  min-width: 205px;
   text-align: center;
 }
 
@@ -65,13 +68,14 @@ body {
 
 .heroSelectorWrapper {
   width: 100%;
+  min-width: 815px;
   text-align: center;
 }
 
 .heroGridWrapper {
   width: 100%;
   text-align: center;
-  min-width: 600px;
+  min-width: 905px;
 }
 
 .strHeroes, .agiHeroes, .intHeroes {
@@ -185,13 +189,13 @@ body {
   background-position: 0px -628px;
 }
 .clinkz {
-  background-position: 0px -670px;
+  background-position: 0px -669px;
 }
 .clockwerk {
-  background-position: 0px -712px;
+  background-position: 0px -711px;
 }
 .crystalmaiden {
-  background-position: 0px -753px;
+  background-position: 0px -752.5px;
 }
 .darkseer {
   background-position: 0px -794px;
@@ -212,257 +216,257 @@ body {
   background-position: 0px -1004px;
 }
 .drowranger {
-  background-position: 0px -1046px;
+  background-position: 0px -1045px;
 }
 .earthshaker {
   background-position: 0px -1087px;
 }
 .earthspirit {
-  background-position: 0px -1130px;
+  background-position: 0px -1129px;
 }
 .eldertitan {
-  background-position: 0px -1172px;
+  background-position: 0px -1171px;
 }
 .emberspirit {
-  background-position: 0px -1214px;
+  background-position: 0px -1212.5px;
 }
 .enchantress {
-  background-position: 0px -1214px;
+  background-position: 0px -1254px;
 }
 .enigma {
-  background-position: 0px -1214px;
+  background-position: 0px -1296px;
 }
 .facelessvoid {
-  background-position: 0px -1214px;
+  background-position: 0px -1338px;
 }
 .gyrocopter {
-  background-position: 0px -1214px;
+  background-position: 0px -1380px;
 }
 .huskar {
-  background-position: 0px -1214px;
+  background-position: 0px -1422px;
 }
 .invoker {
-  background-position: 0px -1214px;
+  background-position: 0px -1463.5px;
 }
 .jakiro {
-  background-position: 0px -1214px;
+  background-position: 0px -1506px;
 }
 .juggernaut {
-  background-position: 0px -1214px;
+  background-position: 0px -1547px;
 }
 .keeperofthelight {
-  background-position: 0px -1214px;
+  background-position: 0px -1589px;
 }
 .kunkka {
-  background-position: 0px -1214px;
+  background-position: 0px -1631px;
 }
 .legioncommander {
-  background-position: 0px -1214px;
+  background-position: 0px -1673px;
 }
 .leshrac {
-  background-position: 0px -1214px;
+  background-position: 0px -1715px;
 }
 .lich {
-  background-position: 0px -1214px;
+  background-position: 0px -1757px;
 }
 .lifestealer {
-  background-position: 0px -1214px;
+  background-position: 0px -1798px;
 }
 .lina {
-  background-position: 0px -1214px;
+  background-position: 0px -1840px;
 }
 .lion {
-  background-position: 0px -1214px;
+  background-position: 0px -1883px;
 }
 .lonedruid {
-  background-position: 0px -1214px;
+  background-position: 0px -1923px;
 }
 .luna {
-  background-position: 0px -1214px;
+  background-position: 0px -1965px;
 }
 .lycan {
-  background-position: 0px -1214px;
+  background-position: 0px -2007px;
 }
 .magnus {
-  background-position: 0px -1214px;
+  background-position: 0px -2049px;
 }
 .medusa {
-  background-position: 0px -1214px;
+  background-position: 0px -2091px;
 }
 .meepo {
-  background-position: 0px -1214px;
+  background-position: 0px -2132px;
 }
 .mirana {
-  background-position: 0px -1214px;
+  background-position: 0px -2174px;
 }
 .morphling {
-  background-position: 0px -1214px;
+  background-position: 0px -2216px;
 }
 .nagasiren {
-  background-position: 0px -1214px;
+  background-position: 0px -2258px;
 }
 .naturesprophet {
-  background-position: 0px -1214px;
+  background-position: 0px -2300px;
 }
 .necrophos {
-  background-position: 0px -1214px;
+  background-position: 0px -2342px;
 }
 .nightstalker {
-  background-position: 0px -1214px;
+  background-position: 0px -2384px;
 }
 .nyxassassin {
-  background-position: 0px -1214px;
+  background-position: 0px -2425px;
 }
 .ogremagi {
-  background-position: 0px -1214px;
+  background-position: 0px -2467px;
 }
 .omniknight {
-  background-position: 0px -1214px;
+  background-position: 0px -2509px;
 }
 .oracle {
-  background-position: 0px -1214px;
+  background-position: 0px -2551px;
 }
 .outworlddevourer {
-  background-position: 0px -1214px;
+  background-position: 0px -2593px;
 }
 .phantomassassin {
-  background-position: 0px -1214px;
+  background-position: 0px -2634.5px;
 }
 .phantomlancer {
-  background-position: 0px -1214px;
+  background-position: 0px -2676px;
 }
 .phoenix {
-  background-position: 0px -1214px;
+  background-position: 0px -2717px;
 }
 .puck {
-  background-position: 0px -1214px;
+  background-position: 0px -2760px;
 }
 .pudge {
-  background-position: 0px -1214px;
+  background-position: 0px -2802px;
 }
 .pugna {
-  background-position: 0px -1214px;
+  background-position: 0px -2843px;
 }
 .queenofpain {
-  background-position: 0px -1214px;
+  background-position: 0px -2884px;
 }
 .razor {
-  background-position: 0px -1214px;
+  background-position: 0px -2927px;
 }
 .riki {
-  background-position: 0px -1214px;
+  background-position: 0px -2969px;
 }
 .rubick {
-  background-position: 0px -1214px;
+  background-position: 0px -3011px;
 }
 .sandking {
-  background-position: 0px -1214px;
+  background-position: 0px -3053px;
 }
 .shadowdemon {
-  background-position: 0px -1214px;
+  background-position: 0px -3094px;
 }
 .shadowfiend {
-  background-position: 0px -1214px;
+  background-position: 0px -3136px;
 }
 .shadowshaman {
-  background-position: 0px -1214px;
+  background-position: 0px -3178px;
 }
 .silencer {
-  background-position: 0px -1214px;
+  background-position: 0px -3220px;
 }
 .wraithking {
-  background-position: 0px -1214px;
+  background-position: 0px -3262px;
 }
 .skywrathmage {
-  background-position: 0px -1214px;
+  background-position: 0px -3304px;
 }
 .slardar {
-  background-position: 0px -1214px;
+  background-position: 0px -3345px;
 }
 .slark {
-  background-position: 0px -1214px;
+  background-position: 0px -3387px;
 }
 .sniper {
-  background-position: 0px -1214px;
+  background-position: 0px -3429px;
 }
 .spectre {
-  background-position: 0px -1214px;
+  background-position: 0px -3471px;
 }
 .spiritbreaker {
-  background-position: 0px -1214px;
+  background-position: 0px -3513px;
 }
 .stormspirit {
-  background-position: 0px -1214px;
+  background-position: 0px -3554.5px;
 }
 .sven {
-  background-position: 0px -1214px;
+  background-position: 0px -3596px;
 }
 .techies {
-  background-position: 0px -1214px;
+  background-position: 0px -3638px;
 }
 .templarassassin {
-  background-position: 0px -1214px;
+  background-position: 0px -3680px;
 }
 .terrorblade {
-  background-position: 0px -1214px;
+  background-position: 0px -3722px;
 }
 .tidehunter {
-  background-position: 0px -1214px;
+  background-position: 0px -3765px;
 }
 .timbersaw {
-  background-position: 0px -1214px;
+  background-position: 0px -3805px;
 }
 .tinker {
-  background-position: 0px -1214px;
+  background-position: 0px -3847px;
 }
 .tiny {
-  background-position: 0px -1214px;
+  background-position: 0px -3889px;
 }
 .treantprotector {
-  background-position: 0px -1214px;
+  background-position: 0px -3931px;
 }
 .trollwarlord {
-  background-position: 0px -1214px;
+  background-position: 0px -3973px;
 }
 .tusk {
-  background-position: 0px -1214px;
+  background-position: 0px -4015px;
 }
 .undying {
-  background-position: 0px -1214px;
+  background-position: 0px -4056px;
 }
 .ursa {
-  background-position: 0px -1214px;
+  background-position: 0px -4098px;
 }
 .vengefulspirit {
-  background-position: 0px -1214px;
+  background-position: 0px -4140px;
 }
 .venomancer {
-  background-position: 0px -1214px;
+  background-position: 0px -4181.5px;
 }
 .viper {
-  background-position: 0px -1214px;
+  background-position: 0px -4223px;
 }
 .visage {
-  background-position: 0px -1214px;
+  background-position: 0px -4265px;
 }
 .warlock {
-  background-position: 0px -1214px;
+  background-position: 0px -4307px;
 }
 .weaver {
-  background-position: 0px -1214px;
+  background-position: 0px -4349px;
 }
 .windranger {
-  background-position: 0px -1214px;
+  background-position: 0px -4390.7px;
 }
 .winterwyvern {
-  background-position: 0px -1214px;
+  background-position: 0px -4432.5px;
 }
 .io {
-  background-position: 0px -1214px;
+  background-position: 0px -4475px;
 }
 .witchdoctor {
-  background-position: 0px -1214px;
+  background-position: 0px -4516px;
 }
 .zeus {
-  background-position: 0px -1214px;
+  background-position: 0px -4558px;
 }
