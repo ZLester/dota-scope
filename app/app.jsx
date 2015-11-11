@@ -70,7 +70,7 @@ var App = React.createClass({
     return (
       <div>
         <Title />
-        <HeroHover heroMouseOver={this.state.heroMouseOver} />
+
         <HeroSelector 
           handleSlotClick={this.handleSlotClick}
           handleClearClick={this.handleClearClick}
@@ -79,6 +79,7 @@ var App = React.createClass({
           slotTwo={this.state.selectorStates.slotTwo} 
           slotThree={this.state.selectorStates.slotThree}
           slotFour={this.state.selectorStates.slotFour} />
+        <HeroHover heroMouseOver={this.state.heroMouseOver} />
         <HeroGrid 
           handleHeroMouseEnter={this.handleHeroMouseEnter}
           handleHeroMouseLeave={this.handleHeroMouseLeave}
