@@ -22,13 +22,14 @@ var checkHeroSelected = function (hero, context) {
 var mapHeroes = function(data, context) {
   var result = data.map(function (row, index) {
       var heroes = row.map(function (hero, index) {
-        var heroName = hero.toLowerCase();
-        var classes = cx({
-          heroName: true,
+        var classNames = {
           'heroPortrait': true,
           'heroPortraitHover': checkHeroHover(hero, context),
           'heroPortraitSelected': checkHeroSelected(hero, context)
-        });
+        }
+        classNames[hero.toLowerCase()] = true;
+        var classes = cx(classNames);
+
         return (
           <td 
             className={classes}
