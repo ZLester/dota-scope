@@ -22,17 +22,17 @@ body {
   background-color: #383735;
   width: 66px;
   height: 40px;
-  border: 1px solid #444;
+  border: 2px solid #444;
   border-radius: 1px;
   cursor: pointer;
 }
 
 .heroPortraitHover {
-  border: 1px solid #999;
+  border: 2px solid #999;
 }
 
 .heroPortraitSelected {
-  border: 1px solid #F00;
+  border: 2px solid #FFF;
 }
 
 .heroPortraitSelectorLarge {
