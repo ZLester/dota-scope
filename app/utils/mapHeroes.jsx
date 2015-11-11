@@ -1,5 +1,5 @@
 var React = require('react');
-var cx = require('classnames')
+var cx = require('classnames');
 
 var checkHeroHover = function (hero, context) {
   if (context.props.hoverState === hero) {
@@ -27,7 +27,7 @@ var mapHeroes = function(data, context) {
           'heroPortraitHover': checkHeroHover(hero, context),
           'heroPortraitSelected': checkHeroSelected(hero, context)
         }
-        classNames[hero.toLowerCase()] = true;
+        classNames[hero.toLowerCase().replace(' ', '')] = true;
         var classes = cx(classNames);
 
         return (

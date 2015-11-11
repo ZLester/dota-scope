@@ -22,7 +22,7 @@ var App = React.createClass({
   },
   handleHeroClick (hero) {
     // Mutates here, refactor later
-    var  newStates = this.state.selectorStates;
+    var newStates = this.state.selectorStates;
     // Check if hero is already in one of the slots
     for (var slotI in this.state.selectorStates) {
       // If so, remove, generate new states and set

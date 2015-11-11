@@ -1,5 +1,6 @@
 body {
-  color: #000;
+  background-color: #000;
+  color: #FFF;
 }
 
 .title {
@@ -12,22 +13,28 @@ body {
 }
 
 .heroPortrait {
-  height: 40px;
+  background-image: url("http://i.imgur.com/lz4UF4c.jpg");
+  /*background-size: 212px 6820px;*/
+  background-size: 136px 4600px;
+  background-color: #383735;
   width: 66px;
-  border: 2px solid #000;
+  height: 40px;
+  border: 2px solid #444;
   border-radius: 1px;
   cursor: pointer;
 }
 
 .heroPortraitHover {
+  background-color: #383735;
   height: 40px;
   width: 66px;
-  border: 2px solid #666;
+  border: 2px solid #777;
   border-radius: 1px;
   cursor: pointer;
 }
 
 .heroPortraitSelected {
+  background-color: #383735;
   height: 40px;
   width: 66px;
   border: 2px solid #AAA;
@@ -36,15 +43,13 @@ body {
 }
 
 .heroPortraitSelectorLarge {
+  background-color: #383735;
   height: 80px;
   width: 132px;
-  border: 2px solid #000;
+  border-top: 2px solid #777;
+  border-left: 2px solid #777;
   border-radius: 2px;
   cursor: pointer;
-}
-
-.heroHover {
-
 }
 
 .heroHoverWrapper {
@@ -53,6 +58,8 @@ body {
 }
 
 .heroSelector {
+  border-collapse:separate;
+  border-spacing: 4px;
   display: inline-block;
 }
 
@@ -79,7 +86,19 @@ body {
 }
 
 .strHeader, .agiHeader, .intHeader {
-  margin: 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+.strHeader {
+  color: #90301A;
+}
+
+.agiHeader {
+  color: #47BE47;
+} 
+
+.intHeader {
+  color: #047ABE;
 }
 .direStrHeroes {
   margin-top: 22px;
@@ -93,19 +112,60 @@ body {
   height: 80px;
   display: inline-block;
   vertical-align: top;
+  margin-top: 2px;
 }
 
-.submitHeroes, .clearHeroes { 
+.submitHeroes, .clearHeroes {
+  background-color: #383735;
   height: 38px;
   width: 102px;
   margin: 2px;
-  border: 2px solid #000;
+  border-top: 2px solid #777;
+  border-left: 2px solid #777;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.clearHeroes {
+  margin-top: 4px;
 }
 
 .submitHeroesLabel, .clearHeroesLabel {
   margin-top: 10px;
   display: inline-block;
   cursor: pointer;
+}
+
+.abaddon {
+  background-position: 0px 0px;
+}
+.alchemist {
+  background-position: 0px -42px;
+}
+.ancientapparition {
+  background-position: 0px -84px;
+}
+.anti-mage {
+  background-position: 0px -125px;
+}
+.axe {
+  background-position: 0px -167px;
+}
+.bane {
+  background-position: 0px -209px;
+}
+.batrider {
+  background-position: 0px -251px;
+}
+.beastmaster {
+  background-position: 0px -293px;
+}
+.bloodseeker {
+  background-position: 0px -334px;
+}
+.bountyhunter {
+  background-position: 0px -376px;
+}
+.brewmaster {
+  background-position: 0px -418px;
 }
