@@ -12,13 +12,13 @@ var HeroGrid = React.createClass({
   },
 
   render () {
+    // Refactor
     var radiantStrRows = mapHeroes(heroNames.radiantStr, this);
     var direStrRows = mapHeroes(heroNames.direStr, this);
     var radiantAgiRows = mapHeroes(heroNames.radiantAgi, this);
     var direAgiRows = mapHeroes(heroNames.direAgi, this);
     var radiantIntRows = mapHeroes(heroNames.radiantInt, this);
     var direIntRows = mapHeroes(heroNames.direInt, this);
-    
     return (
       <div className='heroGridWrapper'>
         <div className='strHeroes'>

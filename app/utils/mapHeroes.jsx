@@ -6,18 +6,17 @@ var checkHeroHover = function (hero, context) {
     return true;
   }
   return false;
-}
+};
 
 var checkHeroSelected = function (hero, context) {
   var result = false;
   for (var slot in context.props.selectorStates) {
-    if (context.props.selectorStates[slot] === hero) {
+    if (context.props.selectorStates[slot].hero === hero) {
       result = true;
     }
   }
   return result;
-}
-
+};
 
 var mapHeroes = function(data, context) {
   var result = data.map(function (row, index) {
@@ -45,6 +44,6 @@ var mapHeroes = function(data, context) {
       );
     }, context)
   return result;
-}
+};
 
 module.exports = mapHeroes;

@@ -50,7 +50,7 @@ var App = React.createClass({
   },
   // MouseEnter Listener for HeroGrid 
   handleHeroMouseEnter (hero) {
-    this.setState({heroMouseOver: hero})
+    this.setState({heroMouseOver: hero});
   },
   // MouseLeave Listener for HeroGrid 
   handleHeroMouseLeave () {
@@ -58,9 +58,14 @@ var App = React.createClass({
   },
   // Click Listener for Selected Hero Portrait
   handleSlotClick (slot) {
+    // Mutates here, refactor later
     var newStates = this.state.selectorStates;
     newStates[slot].hero = '';
     this.setState({selectorStates: newStates});
+  },
+  // Click Listener for Submit Button
+  handleSubmitClick () {
+    console.log('Placeholder for submit');
   },
   // Click Listener for Clear Button
   handleClearClick () {
@@ -73,12 +78,17 @@ var App = React.createClass({
     }
     this.setState({selectorStates: newStates});
   },
-  handleButtonHover (button) {
-    var newStates = {
-      submit: {enabled: false, hover: false},
-      clear: {enabled: true, hover: false}
-    }
+  // Hover Listener for Submit & Clear Buttons
+  handleButtonMouseEnter(button) {
+    // Mutates here, refactor later
+    var newStates = this.state.buttonStates;
     newStates[button].hover = true;
+    this.setState({buttonStates: newStates});
+  },
+  handleButtonMouseLeave(button) {
+    // Mutates here, refactor later
+    var newStates = this.state.buttonStates;
+    newStates[button].hover = false;
     this.setState({buttonStates: newStates});
   },
   render () {
@@ -88,12 +98,14 @@ var App = React.createClass({
         <HeroSelector 
           handleSlotClick={this.handleSlotClick}
           handleClearClick={this.handleClearClick}
-          slotZero={this.state.selectorStates.slotZero} 
+          handleButtonMouseEnter={this.handleButtonMouseEnter}
+          handleButtonMouseLeave={this.handleButtonMouseLeave}
+          slotZero={this.state.selectorStates.slotZero} // Refactor to only pass the object rather than individual slots
           slotOne={this.state.selectorStates.slotOne} 
           slotTwo={this.state.selectorStates.slotTwo} 
           slotThree={this.state.selectorStates.slotThree}
           slotFour={this.state.selectorStates.slotFour} 
-          buttonStates={this.state.buttonStates}/>
+          buttonStates={this.state.buttonStates} />
         <HeroHover heroMouseOver={this.state.heroMouseOver} />
         <HeroGrid 
           handleHeroMouseEnter={this.handleHeroMouseEnter}
