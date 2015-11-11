@@ -27,7 +27,7 @@ var mapHeroes = function(data, context) {
           'heroPortraitHover': checkHeroHover(hero, context),
           'heroPortraitSelected': checkHeroSelected(hero, context)
         }
-        classNames[hero.toLowerCase().replace(' ', '')] = true;
+        classNames[hero.toLowerCase().replace(/[^a-z]+/g, '')] = true;
         var classes = cx(classNames);
 
         return (

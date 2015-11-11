@@ -42,5 +42,5 @@ exports.direInt = [
   ['Enigma', 'Necrophos', 'Warlock', 'Queen of Pain'],
   ['Death Prophet', 'Pugna', 'Dazzle', 'Leshrac'],
   ['Dark Seer', 'Batrider', 'Ancient Apparition', 'Invoker'],
-  ['Outworld Devorer', 'Shadow Demon', 'Visage', 'Winter Wyvern']
+  ['Outworld Devourer', 'Shadow Demon', 'Visage', 'Winter Wyvern']
 ];
