@@ -1,0 +1,85 @@
+.title {
+
+}
+
+.titleWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.heroPortrait {
+  height: 40px;
+  width: 66px;
+  background-color: #666;
+}
+
+.heroPortraitSelected {
+  height: 80px;
+  width: 132px;
+  background-color: #666;
+}
+
+.heroHover {
+
+}
+
+.heroHoverWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.heroSelector {
+  display: inline-block;
+}
+
+.heroSelectorWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.heroGridWrapper {
+  width: 100%;
+  text-align: center;
+  min-width: 600px;
+}
+
+.strHeroes, .agiHeroes, .intHeroes {
+  min-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.radiantAgiHeroes, .direAgiHeroes {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.direStrHeroes {
+  margin-top: 22px;
+}
+
+.direAgiHeroes {
+  margin-top: 66px;
+}
+
+.direIntHeroes {
+  margin-top: 66px;
+}
+
+.buttonWrapper {
+  height: 80px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.submitHeroes, .clearHeroes { 
+  height: 40px;
+  width: 102px;
+  background-color: #666;
+  margin: 2px;
+}
+
+.submitHeroesLabel, .clearHeroesLabel {
+  margin-top: 10px;
+  display: inline-block;
+}

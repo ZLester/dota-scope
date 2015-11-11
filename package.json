@@ -1,0 +1,22 @@
+{
+  "name": "dotascope",
+  "version": "0.0.1",
+  "description": "Dota 2 Counterpicker",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.0.1",
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.12.3"
+  }
+}
