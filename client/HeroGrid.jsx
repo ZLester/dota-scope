@@ -12,7 +12,6 @@ var HeroGrid = React.createClass({
   },
 
   render () {
-    // Refactor
     var radiantStrRows = mapHeroes(heroNames.radiantStr, this);
     var direStrRows = mapHeroes(heroNames.direStr, this);
     var radiantAgiRows = mapHeroes(heroNames.radiantAgi, this);

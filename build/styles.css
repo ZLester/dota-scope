@@ -121,6 +121,30 @@ body {
   cursor: pointer;
 }
 
+.submitHeroesHover, .clearHeroesHover {
+  color: #DDD;
+  background-color: #1C1B1A;
+  height: 38px;
+  width: 102px;
+  margin: 2px;
+  border-top: 2px solid #555;
+  border-left: 2px solid #555;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.submitHeroesDisabled, .clearHeroesDisabled {
+  color: #777;
+  background-color: #222;
+  height: 38px;
+  width: 102px;
+  margin: 2px;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 .clearHeroes {
   margin-top: 4px;
 }
