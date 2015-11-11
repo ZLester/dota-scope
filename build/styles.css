@@ -16,6 +16,7 @@ body {
   width: 66px;
   border: 1px solid #000;
   border-radius: 1px;
+  cursor: pointer;
 }
 
 .heroPortraitSelected {
@@ -23,6 +24,7 @@ body {
   width: 132px;
   border: 2px solid #000;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .heroHover {
@@ -84,9 +86,11 @@ body {
   margin: 2px;
   border: 2px solid #000;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .submitHeroesLabel, .clearHeroesLabel {
   margin-top: 10px;
   display: inline-block;
+  cursor: pointer;
 }
