@@ -72,7 +72,6 @@ var App = React.createClass({
     return (
       <div>
         <Title />
-
         <HeroSelector 
           handleSlotClick={this.handleSlotClick}
           handleClearClick={this.handleClearClick}

@@ -69,15 +69,14 @@ body {
   margin-right: 5px;
 }
 
+.strHeader, .agiHeader, .intHeader {
+  margin: 0px;
+}
 .direStrHeroes {
   margin-top: 22px;
 }
 
-.direAgiHeroes {
-  margin-top: 66px;
-}
-
-.direIntHeroes {
+.direAgiHeroes, .direIntHeroes {
   margin-top: 66px;
 }
 

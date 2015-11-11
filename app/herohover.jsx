@@ -4,7 +4,7 @@ var HeroHover = React.createClass({
   render () {
     return (
       <div className='heroHoverWrapper'>
-        <h3 className='heroHover'>{this.props.heroMouseOver}</h3>
+        <h2 className='heroHover'>{this.props.heroMouseOver}</h2>
       </div>
     )
   }
