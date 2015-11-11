@@ -84,7 +84,9 @@ var App = React.createClass({
         <HeroGrid 
           handleHeroMouseEnter={this.handleHeroMouseEnter}
           handleHeroMouseLeave={this.handleHeroMouseLeave}
-          handleHeroClick={this.handleHeroClick} />
+          handleHeroClick={this.handleHeroClick} 
+          selectorStates={this.state.selectorStates}
+          hoverState={this.state.heroMouseOver} />
       </div>
     );
   }

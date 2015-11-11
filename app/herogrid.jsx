@@ -7,6 +7,8 @@ var HeroGrid = React.createClass({
     handleHeroMouseEnter: React.PropTypes.func.isRequired,
     handleHeroMouseLeave: React.PropTypes.func.isRequired,
     handleHeroClick: React.PropTypes.func.isRequired,
+    selectorStates: React.PropTypes.object.isRequired,
+    hoverState: React.PropTypes.string.isRequired
   },
 
   render () {
