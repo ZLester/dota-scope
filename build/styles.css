@@ -1123,8 +1123,13 @@ body {
 .zeus {
   background-position: 0px -4558px;
 }
+
 .zeusLarge {
   background-image: url("http://i.imgur.com/lz4UF4c.jpg");
   background-position: 0px -8938px;
   background-size: 268px 9020px;
+}
+
+.largePortraitHover {
+  background-position: 134px;
 }
