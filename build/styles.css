@@ -10,13 +10,13 @@
 .heroPortrait {
   height: 40px;
   width: 66px;
-  background-color: #666;
+  border: 1px solid #000;
 }
 
 .heroPortraitSelected {
   height: 80px;
   width: 132px;
-  background-color: #666;
+  border: 2px solid #000;
 }
 
 .heroHover {
@@ -73,9 +73,9 @@
 }
 
 .submitHeroes, .clearHeroes { 
-  height: 40px;
+  height: 38px;
   width: 102px;
-  background-color: #666;
+  border: 2px solid #000;
   margin: 2px;
 }
 
