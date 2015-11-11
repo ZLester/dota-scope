@@ -5,7 +5,8 @@ body {
 }
 
 .title {
-
+  font-size: 50px;
+  margin: 10px 0px 10px 0px;
 }
 
 .titleWrapper {
@@ -16,35 +17,27 @@ body {
 
 .heroPortrait {
   background-image: url("http://i.imgur.com/lz4UF4c.jpg");
-  /*background-size: 212px 6820px;*/
+  /*originalSize: background-size: 212px 6820px;*/
   background-size: 136px 4600px;
   background-color: #383735;
   width: 66px;
   height: 40px;
-  border: 2px solid #444;
+  border: 1px solid #444;
   border-radius: 1px;
   cursor: pointer;
 }
 
 .heroPortraitHover {
-  background-color: #383735;
-  height: 40px;
-  width: 66px;
-  border: 2px solid #777;
-  border-radius: 1px;
-  cursor: pointer;
+  border: 1px solid #999;
 }
 
 .heroPortraitSelected {
-  background-color: #383735;
-  height: 40px;
-  width: 66px;
-  border: 2px solid #AAA;
-  border-radius: 1px;
-  cursor: pointer;
+  border: 1px solid #F00;
 }
 
 .heroPortraitSelectorLarge {
+  background-image: url("http://i.imgur.com/lz4UF4c.jpg");
+  background-size: 1px 1px;
   background-color: #383735;
   height: 80px;
   width: 132px;
@@ -143,330 +136,883 @@ body {
 .abaddon {
   background-position: 0px 0px;
 }
+
+.abaddonLarge {
+  background-position: 0px 0px;
+  background-size: 268px 9020px;
+}
+
 .alchemist {
   background-position: 0px -42px;
 }
+
+.alchemistLarge {
+  background-position: 0px -82px;
+  background-size: 268px 9020px;
+}
+
 .ancientapparition {
   background-position: 0px -84px;
 }
+
+.ancientapparitionLarge {
+  background-position: 0px -164px;
+  background-size: 268px 9020px;
+}
+
 .antimage {
   background-position: 0px -125px;
 }
+
+.antimageLarge {
+  background-position: 0px -246px;
+  background-size: 268px 9020px;
+}
+
 .axe {
   background-position: 0px -167px;
 }
+
+.axeLarge {
+  background-position: 0px -328px;
+  background-size: 268px 9020px;
+}
+
 .bane {
   background-position: 0px -209px;
 }
+
+.baneLarge {
+  background-position: 0px -410px;
+  background-size: 268px 9020px;
+}
+
 .batrider {
   background-position: 0px -251px;
 }
+
+.batriderLarge {
+  background-position: 0px -492px;
+  background-size: 268px 9020px;
+}
+
 .beastmaster {
   background-position: 0px -293px;
 }
+
+.beastmasterLarge {
+  background-position: 0px -574px;
+  background-size: 268px 9020px;
+}
+
 .bloodseeker {
   background-position: 0px -334px;
 }
+
+.bloodseekerLarge {
+  background-position: 0px -656px;
+  background-size: 268px 9020px;
+}
+
 .bountyhunter {
   background-position: 0px -376px;
 }
+
+.bountyhunterLarge {
+  background-position: 0px -738px;
+  background-size: 268px 9020px;
+}
+
 .brewmaster {
   background-position: 0px -418px;
 }
+
+.brewmasterLarge {
+  background-position: 0px -820px;
+  background-size: 268px 9020px;
+}
+
 .bristleback {
   background-position: 0px -460px;
 }
+
+.bristlebackLarge {
+  background-position: 0px -902px;
+  background-size: 268px 9020px;
+}
+
 .broodmother {
   background-position: 0px -502px;
 }
+
+.broodmotherLarge {
+  background-position: 0px -984px;
+  background-size: 268px 9020px;
+}
+
 .centaurwarrunner {
   background-position: 0px -544px;
 }
+
+.centaurwarrunnerLarge {
+  background-position: 0px -1066px;
+  background-size: 268px 9020px;
+}
+
 .chaosknight {
   background-position: 0px -586px;
 }
+
+.chaosknightLarge {
+  background-position: 0px -1148px;
+  background-size: 268px 9020px;
+}
+
 .chen {
   background-position: 0px -628px;
 }
+
+.chenLarge {
+  background-position: 0px -1230px;
+  background-size: 268px 9020px;
+}
+
 .clinkz {
   background-position: 0px -669px;
 }
+
+.clinkzLarge {
+  background-position: 0px -1312px;
+  background-size: 268px 9020px;
+}
+
 .clockwerk {
   background-position: 0px -711px;
 }
+
+.clockwerkLarge {
+  background-position: 0px -1394px;
+  background-size: 268px 9020px;
+}
+
 .crystalmaiden {
   background-position: 0px -752.5px;
 }
+
+.crystalmaidenLarge {
+  background-position: 0px -1476px;
+  background-size: 268px 9020px;
+}
+
 .darkseer {
   background-position: 0px -794px;
 }
+
+.darkseerLarge {
+  background-position: 0px -1558px;
+  background-size: 268px 9020px;
+}
+
 .dazzle {
   background-position: 0px -836px;
 }
+
+.dazzleLarge {
+  background-position: 0px -1640px;
+  background-size: 268px 9020px;
+}
+
 .deathprophet {
   background-position: 0px -878px;
 }
+
+.deathprophetLarge {
+  background-position: 0px -1722px;
+  background-size: 268px 9020px;
+}
+
 .disruptor {
   background-position: 0px -920px;
 }
+
+.disruptorLarge {
+  background-position: 0px -1804px;
+  background-size: 268px 9020px;
+}
+
 .doom {
   background-position: 0px -962px;
 }
+
+.doomLarge {
+  background-position: 0px -1886px;
+  background-size: 268px 9020px;
+}
+
 .dragonknight {
   background-position: 0px -1004px;
 }
+
+.dragonknightLarge {
+  background-position: 0px -1968px;
+  background-size: 268px 9020px;
+}
+
 .drowranger {
   background-position: 0px -1045px;
 }
+
+.drowrangerLarge {
+  background-position: 0px -2050px;
+  background-size: 268px 9020px;
+}
+
 .earthshaker {
   background-position: 0px -1087px;
 }
+
+.earthshakerLarge {
+  background-position: 0px -2132px;
+  background-size: 268px 9020px;
+}
+
 .earthspirit {
   background-position: 0px -1129px;
 }
+
+.earthspiritLarge {
+  background-position: 0px -2214px;
+  background-size: 268px 9020px;
+}
+
 .eldertitan {
   background-position: 0px -1171px;
 }
+
+.eldertitanLarge {
+  background-position: 0px -2296px;
+  background-size: 268px 9020px;
+}
+
 .emberspirit {
   background-position: 0px -1212.5px;
 }
+
+.emberspiritLarge {
+  background-position: 0px -2378px;
+  background-size: 268px 9020px;
+}
+
 .enchantress {
   background-position: 0px -1254px;
 }
+
+.enchantressLarge {
+  background-position: 0px -2460px;
+  background-size: 268px 9020px;
+}
+
 .enigma {
   background-position: 0px -1296px;
 }
+
+.enigmaLarge {
+  background-position: 0px -2542px;
+  background-size: 268px 9020px;
+}
+
 .facelessvoid {
   background-position: 0px -1338px;
 }
+
+.facelessvoidLarge {
+  background-position: 0px -2624px;
+  background-size: 268px 9020px;
+}
+
 .gyrocopter {
   background-position: 0px -1380px;
 }
+
+.gyrocopterLarge {
+  background-position: 0px -2706px;
+  background-size: 268px 9020px;
+}
+
 .huskar {
   background-position: 0px -1422px;
 }
+
+.huskarLarge {
+  background-position: 0px -2788px;
+  background-size: 268px 9020px;
+}
+
 .invoker {
   background-position: 0px -1463.5px;
 }
+
+.invokerLarge {
+  background-position: 0px -2870px;
+  background-size: 268px 9020px;
+}
+
 .jakiro {
   background-position: 0px -1506px;
 }
+
+.jakiroLarge {
+  background-position: 0px -2952px;
+  background-size: 268px 9020px;
+}
+
 .juggernaut {
   background-position: 0px -1547px;
 }
+
+.juggernautLarge {
+  background-position: 0px -3034px;
+  background-size: 268px 9020px;
+}
+
 .keeperofthelight {
   background-position: 0px -1589px;
 }
+
+.keeperofthelightLarge {
+  background-position: 0px -3116px;
+  background-size: 268px 9020px;
+}
+
 .kunkka {
   background-position: 0px -1631px;
 }
+
+.kunkkaLarge {
+  background-position: 0px -3198px;
+  background-size: 268px 9020px;
+}
+
 .legioncommander {
   background-position: 0px -1673px;
 }
+
+.legioncommanderLarge {
+  background-position: 0px -3280px;
+  background-size: 268px 9020px;
+}
+
 .leshrac {
   background-position: 0px -1715px;
 }
+
+.leshracLarge {
+  background-position: 0px -3362px;
+  background-size: 268px 9020px;
+}
+
 .lich {
   background-position: 0px -1757px;
 }
+
+.lichLarge {
+  background-position: 0px -3444px;
+  background-size: 268px 9020px;
+}
+
 .lifestealer {
   background-position: 0px -1798px;
 }
+
+.lifestealerLarge {
+  background-position: 0px -3526px;
+  background-size: 268px 9020px;
+}
+
 .lina {
   background-position: 0px -1840px;
 }
+
+.linaLarge {
+  background-position: 0px -3608px;
+  background-size: 268px 9020px;
+}
+
 .lion {
   background-position: 0px -1883px;
 }
+
+.lionLarge {
+  background-position: 0px -3690px;
+  background-size: 268px 9020px;
+}
+
 .lonedruid {
   background-position: 0px -1923px;
 }
+
+.lonedruidLarge {
+  background-position: 0px -3772px;
+  background-size: 268px 9020px;
+}
+
 .luna {
   background-position: 0px -1965px;
 }
+
+.lunaLarge {
+  background-position: 0px -3854px;
+  background-size: 268px 9020px;
+}
+
 .lycan {
   background-position: 0px -2007px;
 }
+
+.lycanLarge {
+  background-position: 0px -3936px;
+  background-size: 268px 9020px;
+}
+
 .magnus {
   background-position: 0px -2049px;
 }
+
+.magnusLarge {
+  background-position: 0px -4018px;
+  background-size: 268px 9020px;
+}
+
 .medusa {
   background-position: 0px -2091px;
 }
+
+.medusaLarge {
+  background-position: 0px -4100px;
+  background-size: 268px 9020px;
+}
+
 .meepo {
   background-position: 0px -2132px;
 }
+
+.meepoLarge {
+  background-position: 0px -4182px;
+  background-size: 268px 9020px;
+}
+
 .mirana {
   background-position: 0px -2174px;
 }
+
+.miranaLarge {
+  background-position: 0px -4264px;
+  background-size: 268px 9020px;
+}
+
 .morphling {
   background-position: 0px -2216px;
 }
+
+.morphlingLarge {
+  background-position: 0px -4346px;
+  background-size: 268px 9020px;
+}
+
 .nagasiren {
   background-position: 0px -2258px;
 }
+
+.nagasirenLarge {
+  background-position: 0px -4428px;
+  background-size: 268px 9020px;
+}
+
 .naturesprophet {
   background-position: 0px -2300px;
 }
+
+.naturesprophetLarge {
+  background-position: 0px -4510px;
+  background-size: 268px 9020px;
+}
+
 .necrophos {
   background-position: 0px -2342px;
+}
+
+.necrophosLarge {
+  background-position: 0px -4592px;
+  background-size: 268px 9020px;
 }
 .nightstalker {
   background-position: 0px -2384px;
 }
+.nightstalkerLarge {
+  background-position: 0px -4674px;
+  background-size: 268px 9020px;
+}
 .nyxassassin {
   background-position: 0px -2425px;
+}
+.nyxassassinLarge {
+  background-position: 0px -4756px;
+  background-size: 268px 9020px;
 }
 .ogremagi {
   background-position: 0px -2467px;
 }
+.ogremagiLarge {
+  background-position: 0px -4838px;
+  background-size: 268px 9020px;
+}
 .omniknight {
   background-position: 0px -2509px;
+}
+.omniknightLarge {
+  background-position: 0px -4920px;
+  background-size: 268px 9020px;
 }
 .oracle {
   background-position: 0px -2551px;
 }
+.oracleLarge {
+  background-position: 0px -5002px;
+  background-size: 268px 9020px;
+}
 .outworlddevourer {
   background-position: 0px -2593px;
+}
+.outworlddevourerLarge {
+  background-position: 0px -5084px;
+  background-size: 268px 9020px;
 }
 .phantomassassin {
   background-position: 0px -2634.5px;
 }
+.phantomassassinLarge {
+  background-position: 0px -5166px;
+  background-size: 268px 9020px;
+}
 .phantomlancer {
   background-position: 0px -2676px;
+}
+.phantomlancerLarge {
+  background-position: 0px -5248px;
+  background-size: 268px 9020px;
 }
 .phoenix {
   background-position: 0px -2717px;
 }
+.phoenixLarge {
+  background-position: 0px -5330px;
+  background-size: 268px 9020px;
+}
 .puck {
   background-position: 0px -2760px;
+}
+.puckLarge {
+  background-position: 0px -5412px;
+  background-size: 268px 9020px;
 }
 .pudge {
   background-position: 0px -2802px;
 }
+.pudgeLarge {
+  background-position: 0px -5494px;
+  background-size: 268px 9020px;
+}
 .pugna {
   background-position: 0px -2843px;
+}
+.pugnaLarge {
+  background-position: 0px -5576px;
+  background-size: 268px 9020px;
 }
 .queenofpain {
   background-position: 0px -2884px;
 }
+.queenofpainLarge {
+  background-position: 0px -5658px;
+  background-size: 268px 9020px;
+}
 .razor {
   background-position: 0px -2927px;
+}
+.razorLarge {
+  background-position: 0px -5740px;
+  background-size: 268px 9020px;
 }
 .riki {
   background-position: 0px -2969px;
 }
+.rikiLarge {
+  background-position: 0px -5822px;
+  background-size: 268px 9020px;
+}
 .rubick {
   background-position: 0px -3011px;
+}
+.rubickLarge {
+  background-position: 0px -5904px;
+  background-size: 268px 9020px;
 }
 .sandking {
   background-position: 0px -3053px;
 }
+.sandkingLarge {
+  background-position: 0px -5986px;
+  background-size: 268px 9020px;
+}
 .shadowdemon {
   background-position: 0px -3094px;
+}
+.shadowdemonLarge {
+  background-position: 0px -6068px;
+  background-size: 268px 9020px;
 }
 .shadowfiend {
   background-position: 0px -3136px;
 }
+.shadowfiendLarge {
+  background-position: 0px -6150px;
+  background-size: 268px 9020px;
+}
 .shadowshaman {
   background-position: 0px -3178px;
+}
+.shadowshamanLarge {
+  background-position: 0px -6232px;
+  background-size: 268px 9020px;
 }
 .silencer {
   background-position: 0px -3220px;
 }
+.silencerLarge {
+  background-position: 0px -6314px;
+  background-size: 268px 9020px;
+}
 .wraithking {
   background-position: 0px -3262px;
+}
+.wraithkingLarge {
+  background-position: 0px -6396px;
+  background-size: 268px 9020px;
 }
 .skywrathmage {
   background-position: 0px -3304px;
 }
+.skywrathmageLarge {
+  background-position: 0px -6478px;
+  background-size: 268px 9020px;
+}
 .slardar {
   background-position: 0px -3345px;
+}
+.slardarLarge {
+  background-position: 0px -6560px;
+  background-size: 268px 9020px;
 }
 .slark {
   background-position: 0px -3387px;
 }
+.slarkLarge {
+  background-position: 0px -6642px;
+  background-size: 268px 9020px;
+}
 .sniper {
   background-position: 0px -3429px;
+}
+.sniperLarge {
+  background-position: 0px -6724px;
+  background-size: 268px 9020px;
 }
 .spectre {
   background-position: 0px -3471px;
 }
+.spectreLarge {
+  background-position: 0px -6806px;
+  background-size: 268px 9020px;
+}
 .spiritbreaker {
   background-position: 0px -3513px;
+}
+.spiritbreakerLarge {
+  background-position: 0px -6888px;
+  background-size: 268px 9020px;
 }
 .stormspirit {
   background-position: 0px -3554.5px;
 }
+.stormspiritLarge {
+  background-position: 0px -6970px;
+  background-size: 268px 9020px;
+}
 .sven {
   background-position: 0px -3596px;
+}
+.svenLarge {
+  background-position: 0px -7052px;
+  background-size: 268px 9020px;
 }
 .techies {
   background-position: 0px -3638px;
 }
+.techiesLarge {
+  background-position: 0px -7134px;
+  background-size: 268px 9020px;
+}
 .templarassassin {
   background-position: 0px -3680px;
+}
+.templarassassinLarge {
+  background-position: 0px -7216px;
+  background-size: 268px 9020px;
 }
 .terrorblade {
   background-position: 0px -3722px;
 }
+.terrorbladeLarge {
+  background-position: 0px -7298px;
+  background-size: 268px 9020px;
+}
 .tidehunter {
   background-position: 0px -3765px;
+}
+.tidehunterLarge {
+  background-position: 0px -7380px;
+  background-size: 268px 9020px;
 }
 .timbersaw {
   background-position: 0px -3805px;
 }
+.timbersawLarge {
+  background-position: 0px -7462px;
+  background-size: 268px 9020px;
+}
 .tinker {
   background-position: 0px -3847px;
+}
+.tinkerLarge {
+  background-position: 0px -7544px;
+  background-size: 268px 9020px;
 }
 .tiny {
   background-position: 0px -3889px;
 }
+.tinyLarge {
+  background-position: 0px -7626px;
+  background-size: 268px 9020px;
+}
 .treantprotector {
   background-position: 0px -3931px;
+}
+.treantprotectorLarge {
+  background-position: 0px -7708px;
+  background-size: 268px 9020px;
 }
 .trollwarlord {
   background-position: 0px -3973px;
 }
+.trollwarlordLarge {
+  background-position: 0px -7790px;
+  background-size: 268px 9020px;
+}
 .tusk {
   background-position: 0px -4015px;
+}
+.tuskLarge {
+  background-position: 0px -7872px;
+  background-size: 268px 9020px;
 }
 .undying {
   background-position: 0px -4056px;
 }
+.undyingLarge {
+  background-position: 0px -7954px;
+  background-size: 268px 9020px;
+}
 .ursa {
   background-position: 0px -4098px;
+}
+.ursaLarge {
+  background-position: 0px -8036px;
+  background-size: 268px 9020px;
 }
 .vengefulspirit {
   background-position: 0px -4140px;
 }
+.vengefulspiritLarge {
+  background-position: 0px -8118px;
+  background-size: 268px 9020px;
+}
 .venomancer {
   background-position: 0px -4181.5px;
+}
+.venomancerLarge {
+  background-position: 0px -8200px;
+  background-size: 268px 9020px;
 }
 .viper {
   background-position: 0px -4223px;
 }
+.viperLarge {
+  background-position: 0px -8282px;
+  background-size: 268px 9020px;
+}
 .visage {
   background-position: 0px -4265px;
+}
+.visageLarge {
+  background-position: 0px -8364px;
+  background-size: 268px 9020px;
 }
 .warlock {
   background-position: 0px -4307px;
 }
+.warlockLarge {
+  background-position: 0px -8446px;
+  background-size: 268px 9020px;
+}
 .weaver {
   background-position: 0px -4349px;
+}
+.weaverLarge {
+  background-position: 0px -8525px;
+  background-size: 268px 9020px;
 }
 .windranger {
   background-position: 0px -4390.7px;
 }
+.windrangerLarge {
+  background-position: 0px -8610px;
+  background-size: 268px 9020px;
+}
 .winterwyvern {
   background-position: 0px -4432.5px;
+}
+.winterwyvernLarge {
+  background-position: 0px -8692px;
+  background-size: 268px 9020px;
 }
 .io {
   background-position: 0px -4475px;
 }
+.ioLarge {
+  background-position: 0px -8774px;
+  background-size: 268px 9020px;
+}
 .witchdoctor {
   background-position: 0px -4516px;
 }
+.witchdoctorLarge {
+  background-position: 0px -8856px;
+  background-size: 268px 9020px;
+}
 .zeus {
   background-position: 0px -4558px;
+}
+.zeusLarge {
+  background-position: 0px -8938px;
+  background-size: 268px 9020px;
 }

@@ -1,4 +1,5 @@
 var React = require('react');
+var cx = require('classnames');
 
 var HeroSelector = React.createClass({
   propTypes: {
@@ -9,16 +10,41 @@ var HeroSelector = React.createClass({
     slotFour: React.PropTypes.string.isRequired
   },
   render () {
+    var slotZeroClassNames = {
+      'heroPortraitSelectorLarge': true,
+    }
+    slotZeroClassNames[this.props.slotZero.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] =  this.props.slotZero !== '';
+    var slotZeroClasses = cx(slotZeroClassNames);
+    var slotOneClassNames = {
+      'heroPortraitSelectorLarge': true,
+    }
+    slotOneClassNames[this.props.slotOne.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] =  this.props.slotOne !== '';
+    var slotOneClasses = cx(slotOneClassNames);
+    var slotTwoClassNames = {
+      'heroPortraitSelectorLarge': true,
+    }
+    slotTwoClassNames[this.props.slotTwo.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] = this.props.slotTwo !== '';
+    var slotTwoClasses = cx(slotTwoClassNames);
+    var slotThreeClassNames = {
+      'heroPortraitSelectorLarge': true,
+    }
+    slotThreeClassNames[this.props.slotThree.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] = this.props.slotThree !== '';
+    var slotThreeClasses = cx(slotThreeClassNames);
+    var slotFourClassNames = {
+      'heroPortraitSelectorLarge': true,
+    }
+    slotFourClassNames[this.props.slotFour.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] = this.props.slotFour !== '';
+    var slotFourClasses = cx(slotFourClassNames);
     return (
       <div className='heroSelectorWrapper'>
         <table className='heroSelector'>
           <tbody>
             <tr>
-              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotZero')}>{this.props.slotZero}</td>
-              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotOne')}>{this.props.slotOne}</td>
-              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotTwo')}>{this.props.slotTwo}</td>
-              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotThree')}>{this.props.slotThree}</td>
-              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotFour')}>{this.props.slotFour}</td>
+              <td className={slotZeroClasses} onClick={this.props.handleSlotClick.bind(null, 'slotZero')}></td>
+              <td className={slotOneClasses} onClick={this.props.handleSlotClick.bind(null, 'slotOne')}></td>
+              <td className={slotTwoClasses} onClick={this.props.handleSlotClick.bind(null, 'slotTwo')}></td>
+              <td className={slotThreeClasses} onClick={this.props.handleSlotClick.bind(null, 'slotThree')}></td>
+              <td className={slotFourClasses} onClick={this.props.handleSlotClick.bind(null, 'slotFour')}></td>
             </tr>
           </tbody>
         </table>

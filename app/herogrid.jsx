@@ -18,6 +18,7 @@ var HeroGrid = React.createClass({
     var direAgiRows = mapHeroes(heroNames.direAgi, this);
     var radiantIntRows = mapHeroes(heroNames.radiantInt, this);
     var direIntRows = mapHeroes(heroNames.direInt, this);
+    
     return (
       <div className='heroGridWrapper'>
         <div className='strHeroes'>
