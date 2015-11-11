@@ -21,10 +21,14 @@ var App = React.createClass({
     })
   },
   handleHeroClick (hero) {
+    // Mutates here, refactor later
+    var  newStates = this.state.selectorStates;
     // Check if hero is already in one of the slots
     for (var slotI in this.state.selectorStates) {
-      // If so, return to avoid duplicates
+      // If so, remove, generate new states and set
       if (this.state.selectorStates[slotI] === hero) {
+        newStates[slotI] = '';
+        this.setState({selectorStates: newStates});
         return;
       }
     }
@@ -33,8 +37,6 @@ var App = React.createClass({
       // Add hero to first empty slot encountered
       if (this.state.selectorStates[slotJ] === '') {
         // Generate new state object and set
-        // Mutates here, refactor later
-        var newStates = this.state.selectorStates;
         newStates[slotJ] = hero;
         this.setState({selectorStates: newStates});
         return;

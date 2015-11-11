@@ -14,12 +14,19 @@ body {
 .heroPortrait {
   height: 40px;
   width: 66px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 1px;
   cursor: pointer;
 }
 
+.heroPortraitHover {
+  border: 2px solid #999;
+}
 .heroPortraitSelected {
+  border: 2px solid #AAA;
+}
+
+.heroPortraitSelectorLarge {
   height: 80px;
   width: 132px;
   border: 2px solid #000;

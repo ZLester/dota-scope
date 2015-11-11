@@ -14,11 +14,11 @@ var HeroSelector = React.createClass({
         <table className='heroSelector'>
           <tbody>
             <tr>
-              <td className='heroPortraitSelected' onClick={this.props.handleSlotClick.bind(null, 'slotZero')}>{this.props.slotZero}</td>
-              <td className='heroPortraitSelected' onClick={this.props.handleSlotClick.bind(null, 'slotOne')}>{this.props.slotOne}</td>
-              <td className='heroPortraitSelected' onClick={this.props.handleSlotClick.bind(null, 'slotTwo')}>{this.props.slotTwo}</td>
-              <td className='heroPortraitSelected' onClick={this.props.handleSlotClick.bind(null, 'slotThree')}>{this.props.slotThree}</td>
-              <td className='heroPortraitSelected' onClick={this.props.handleSlotClick.bind(null, 'slotFour')}>{this.props.slotFour}</td>
+              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotZero')}>{this.props.slotZero}</td>
+              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotOne')}>{this.props.slotOne}</td>
+              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotTwo')}>{this.props.slotTwo}</td>
+              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotThree')}>{this.props.slotThree}</td>
+              <td className='heroPortraitSelectorLarge' onClick={this.props.handleSlotClick.bind(null, 'slotFour')}>{this.props.slotFour}</td>
             </tr>
           </tbody>
         </table>
