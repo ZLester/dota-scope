@@ -1,6 +1,6 @@
 var React = require('react');
 var mapHeroes = require('./utils/mapHeroes.jsx');
-var stubData = require('./utils/stubData.js');
+var heroNames = require('./utils/heroNames.js');
 
 var HeroGrid = React.createClass({
   propTypes: {
@@ -12,12 +12,12 @@ var HeroGrid = React.createClass({
   },
 
   render () {
-    var radiantStrRows = mapHeroes(stubData.radiantStr, this);
-    var direStrRows = mapHeroes(stubData.direStr, this);
-    var radiantAgiRows = mapHeroes(stubData.radiantAgi, this);
-    var direAgiRows = mapHeroes(stubData.direAgi, this);
-    var radiantIntRows = mapHeroes(stubData.radiantInt, this);
-    var direIntRows = mapHeroes(stubData.direInt, this);
+    var radiantStrRows = mapHeroes(heroNames.radiantStr, this);
+    var direStrRows = mapHeroes(heroNames.direStr, this);
+    var radiantAgiRows = mapHeroes(heroNames.radiantAgi, this);
+    var direAgiRows = mapHeroes(heroNames.direAgi, this);
+    var radiantIntRows = mapHeroes(heroNames.radiantInt, this);
+    var direIntRows = mapHeroes(heroNames.direInt, this);
     return (
       <div className='heroGridWrapper'>
         <div className='strHeroes'>
