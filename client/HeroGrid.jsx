@@ -1,6 +1,6 @@
 var React = require('react');
-var mapHeroes = require('./utils/mapHeroes.jsx');
-var heroNames = require('./utils/heroNames.js');
+var mapHeroes = require('./utils/mapheroes.jsx');
+var heroNames = require('./utils/heronames.js');
 
 var HeroGrid = React.createClass({
   propTypes: {

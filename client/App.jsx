@@ -1,9 +1,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Title = require('./title.jsx');
-var HeroHover = require('./HeroHover.jsx');
-var HeroGrid = require('./HeroGrid.jsx');
-var HeroSelector = require('./HeroSelector.jsx');
+var HeroHover = require('./herohover.jsx');
+var HeroGrid = require('./herogrid.jsx');
+var HeroSelector = require('./heroselector.jsx');
 
 var App = React.createClass({
   getInitialState () {
