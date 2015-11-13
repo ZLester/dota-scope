@@ -1,7 +1,7 @@
 body {
   background-color: #000;
   color: #FFF;
-  font-family: 'Marcellus', serif;
+  font-family: 'Marcellus SC', serif;
 }
 
 .title {
@@ -74,7 +74,7 @@ body {
 }
 
 .strHeroes, .agiHeroes, .intHeroes {
-  min-width: 200px;
+  min-width: 298px;
   display: inline-block;
   vertical-align: top;
 }

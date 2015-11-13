@@ -18815,7 +18815,7 @@
 	  render:function () {
 	    return (
 	      React.createElement("div", {className: "titleWrapper"}, 
-	        React.createElement("h1", {className: "title"}, "DOTA SCOPE")
+	        React.createElement("h1", {className: "title"}, "Dota Scope")
 	      )
 	    )
 	  }
@@ -18836,7 +18836,7 @@
 	  render:function () {
 	    return (
 	      React.createElement("div", {className: "heroHoverWrapper"}, 
-	        React.createElement("h2", {className: "heroHover"}, this.props.heroMouseOver.toUpperCase())
+	        React.createElement("h2", {className: "heroHover"}, this.props.heroMouseOver)
 	      )
 	    )
 	  }
