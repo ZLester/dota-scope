@@ -4,6 +4,7 @@ var Title = require('./title.jsx');
 var HeroHover = require('./herohover.jsx');
 var HeroGrid = require('./herogrid.jsx');
 var HeroSelector = require('./heroselector.jsx');
+var $ = require('jquery');
 
 var App = React.createClass({
   getInitialState () {
@@ -23,6 +24,13 @@ var App = React.createClass({
         submitHeroes: {enabled: true, hover: false},
         clearHeroes: {enabled: true, hover: false}
       },
+      displayGrid: true,
+      // Initial/Default States for Hero Counters
+      counterStates: {
+        greatCounters: [],
+        counters: [],
+        avoid: []
+      }
     });
   },
   handleHeroClick (hero) {
@@ -65,7 +73,25 @@ var App = React.createClass({
   },
   // Click Listener for Submit Button
   handleSubmitClick () {
-    console.log('Placeholder for submit');
+    if (this.state.displayGrid) {
+      var url = 'api/match?';
+      var queryUrl = Object.keys(this.state.selectorStates).reduce((urlStr, state) => {
+        var heroStr = this.state.selectorStates[state].hero || 'empty';
+        urlStr += (state + '=' + heroStr.toLowerCase() + '&');
+        return urlStr;
+      }, url);
+
+      $.get(queryUrl, result => {
+        this.setState({displayGrid: false, counterStates: result});
+      })
+    } else {
+      this.setState({displayGrid: true, counterStates: {
+        greatCounters: [],
+        counters: [],
+        avoid: []
+      }});
+    }
+
   },
   // Click Listener for Clear Button
   handleClearClick () {
@@ -99,6 +125,7 @@ var App = React.createClass({
         <Title />
         <HeroSelector 
           handleSlotClick={this.handleSlotClick}
+          handleSubmitClick={this.handleSubmitClick}
           handleClearClick={this.handleClearClick}
           handleButtonMouseEnter={this.handleButtonMouseEnter}
           handleButtonMouseLeave={this.handleButtonMouseLeave}
@@ -107,9 +134,13 @@ var App = React.createClass({
           slotTwo={this.state.selectorStates.slotTwo} 
           slotThree={this.state.selectorStates.slotThree}
           slotFour={this.state.selectorStates.slotFour} 
+          displayGrid={this.state.displayGrid}
+          counterStates={this.state.counterStates}
           buttonStates={this.state.buttonStates} />
         <HeroHover heroMouseOver={this.state.heroMouseOver} />
         <HeroGrid 
+          displayGrid={this.state.displayGrid}
+          counterStates={this.state.counterStates}
           handleHeroMouseEnter={this.handleHeroMouseEnter}
           handleHeroMouseLeave={this.handleHeroMouseLeave}
           handleHeroClick={this.handleHeroClick} 

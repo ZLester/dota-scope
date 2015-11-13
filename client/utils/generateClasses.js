@@ -44,6 +44,21 @@ exports.hero = function(hero, context) {
   return cx(classNames);
 }
 
+exports.result = function(hero, context) {
+  var checkHeroHover = function (hero, context) {
+    if (context.props.hoverState === hero) {
+      return true;
+    }
+    return false;
+  };
+  var classNames = {
+    'heroPortrait': true,
+    'heroPortraitResultHover': checkHeroHover(hero, context)
+  };
+  classNames[hero.toLowerCase().replace(/[^a-z]+/g, '')] = true;
+
+  return cx(classNames);
+}
         
 
 

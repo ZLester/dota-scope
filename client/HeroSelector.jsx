@@ -35,7 +35,7 @@ var HeroSelector = React.createClass({
           </tbody>
         </table>
         <div className='buttonWrapper'>
-          <div className={submitHeroesClasses} onMouseEnter={this.props.handleButtonMouseEnter.bind(null, 'submitHeroes')} onMouseLeave={this.props.handleButtonMouseLeave.bind(null, 'submitHeroes')}><span className="submitHeroesLabel">Submit</span></div>
+          <div className={submitHeroesClasses} onMouseEnter={this.props.handleButtonMouseEnter.bind(null, 'submitHeroes')} onMouseLeave={this.props.handleButtonMouseLeave.bind(null, 'submitHeroes')} onClick={this.props.handleSubmitClick}><span className="submitHeroesLabel">{this.props.displayGrid ? 'Submit' : 'Back'}</span></div>
           <div className={clearHeroesClasses}  onMouseEnter={this.props.handleButtonMouseEnter.bind(null, 'clearHeroes')} onMouseLeave={this.props.handleButtonMouseLeave.bind(null, 'clearHeroes')} onClick={this.props.handleClearClick}><span className="clearHeroesLabel">Clear</span></div>
         </div>
       </div>
