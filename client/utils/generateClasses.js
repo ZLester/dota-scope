@@ -3,8 +3,10 @@ var cx = require('classnames');
 exports.slot = function (slot, context) {
   var classNames = {
     'heroPortraitSelectorLarge': true,
-  }
-  classNames[context.props[slot].hero.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] = context.props[slot].hero !== '';
+    'heroPortraitSelectorLargeFilled': context.props.selectorStates[slot].hero !== '',
+    'heroPortraitSelectorLargeFilledHover': context.props.selectorStates[slot].hero !== '' && context.props.selectorStates[slot].hover === true
+  };
+  classNames[context.props.selectorStates[slot].hero.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] = context.props.selectorStates[slot].hero !== '';
   return cx(classNames);
 }
 

@@ -57,6 +57,7 @@
 	    return ({
 	      // Initial/Default State for Hero MouseOver Message
 	      heroMouseOver: 'Select a Hero',
+
 	      // Initial/Default State for Selected Hero Portraits
 	      selectorStates: {
 	        slotZero: {hero: '', hover: false},
@@ -117,9 +118,22 @@
 	    newStates[slot].hero = '';
 	    this.setState({selectorStates: newStates});
 	  },
+	  // MouseEnter Listener for HeroGrid 
+	  handleSlotMouseEnter:function (slot) {
+	    var newStates = this.state.selectorStates;
+	    newStates[slot].hover = true;
+	    this.setState({selectorStates: newStates});
+	  },
+	  // MouseLeave Listener for HeroGrid 
+	  handleSlotMouseLeave:function (slot) {
+	    var newStates = this.state.selectorStates;
+	    newStates[slot].hover = false;
+	    this.setState({selectorStates: newStates});
+	  },
+
 	  // Click Listener for Submit Button
 	  handleSubmitClick:function () {
-	    if (this.state.displayGrid) {
+	    if (this.state.displayGrid && this.state.buttonStates.submitHeroes.enabled) {
 	      var url = 'api/match?';
 	      var queryUrl = Object.keys(this.state.selectorStates).reduce(function(urlStr, state)  {
 	        var heroStr = this.state.selectorStates[state].hero || 'empty';
@@ -131,11 +145,7 @@
 	        this.setState({displayGrid: false, counterStates: result});
 	      }.bind(this))
 	    } else {
-	      this.setState({displayGrid: true, counterStates: {
-	        greatCounters: [],
-	        counters: [],
-	        avoid: []
-	      }});
+	      this.setState({displayGrid: true});
 	    }
 
 	  },
@@ -175,11 +185,9 @@
 	          handleClearClick: this.handleClearClick, 
 	          handleButtonMouseEnter: this.handleButtonMouseEnter, 
 	          handleButtonMouseLeave: this.handleButtonMouseLeave, 
-	          slotZero: this.state.selectorStates.slotZero, // Refactor to only pass the object rather than individual slots
-	          slotOne: this.state.selectorStates.slotOne, 
-	          slotTwo: this.state.selectorStates.slotTwo, 
-	          slotThree: this.state.selectorStates.slotThree, 
-	          slotFour: this.state.selectorStates.slotFour, 
+	          handleSlotMouseEnter: this.handleSlotMouseEnter, 
+	          handleSlotMouseLeave: this.handleSlotMouseLeave, 
+	          selectorStates: this.state.selectorStates, 
 	          displayGrid: this.state.displayGrid, 
 	          counterStates: this.state.counterStates, 
 	          buttonStates: this.state.buttonStates}), 
@@ -18986,8 +18994,10 @@
 	exports.slot = function (slot, context) {
 	  var classNames = {
 	    'heroPortraitSelectorLarge': true,
-	  }
-	  classNames[context.props[slot].hero.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] = context.props[slot].hero !== '';
+	    'heroPortraitSelectorLargeFilled': context.props.selectorStates[slot].hero !== '',
+	    'heroPortraitSelectorLargeFilledHover': context.props.selectorStates[slot].hero !== '' && context.props.selectorStates[slot].hover === true
+	  };
+	  classNames[context.props.selectorStates[slot].hero.toLowerCase().replace(/[^a-z]+/g, '') + 'Large'] = context.props.selectorStates[slot].hero !== '';
 	  return cx(classNames);
 	}
 
@@ -19163,11 +19173,7 @@
 
 	var HeroSelector = React.createClass({displayName: "HeroSelector",
 	  propTypes: {
-	    slotZero: React.PropTypes.string.isRequired,
-	    slotOne: React.PropTypes.string.isRequired,
-	    slotTwo: React.PropTypes.string.isRequired,
-	    slotThree: React.PropTypes.string.isRequired,
-	    slotFour: React.PropTypes.string.isRequired,
+	    selectorStates: React.PropTypes.object.isRequired,
 	    buttonStates: React.PropTypes.object.isRequired,
 	    handleButtonMouseEnter: React.PropTypes.func.isRequired,
 	    handleButtonMouseLeave: React.PropTypes.func.isRequired
@@ -19185,11 +19191,11 @@
 	        React.createElement("table", {className: "heroSelector"}, 
 	          React.createElement("tbody", null, 
 	            React.createElement("tr", null, 
-	              React.createElement("td", {className: slotZeroClasses, onClick: this.props.handleSlotClick.bind(null, 'slotZero')}), 
-	              React.createElement("td", {className: slotOneClasses, onClick: this.props.handleSlotClick.bind(null, 'slotOne')}), 
-	              React.createElement("td", {className: slotTwoClasses, onClick: this.props.handleSlotClick.bind(null, 'slotTwo')}), 
-	              React.createElement("td", {className: slotThreeClasses, onClick: this.props.handleSlotClick.bind(null, 'slotThree')}), 
-	              React.createElement("td", {className: slotFourClasses, onClick: this.props.handleSlotClick.bind(null, 'slotFour')})
+	              React.createElement("td", {className: slotZeroClasses, onMouseEnter: this.props.handleSlotMouseEnter.bind(null, 'slotZero'), onMouseLeave: this.props.handleSlotMouseLeave.bind(null, 'slotZero'), onClick: this.props.handleSlotClick.bind(null, 'slotZero')}), 
+	              React.createElement("td", {className: slotOneClasses, onMouseEnter: this.props.handleSlotMouseEnter.bind(null, 'slotOne'), onMouseLeave: this.props.handleSlotMouseLeave.bind(null, 'slotOne'), onClick: this.props.handleSlotClick.bind(null, 'slotOne')}), 
+	              React.createElement("td", {className: slotTwoClasses, onMouseEnter: this.props.handleSlotMouseEnter.bind(null, 'slotTwo'), onMouseLeave: this.props.handleSlotMouseLeave.bind(null, 'slotTwo'), onClick: this.props.handleSlotClick.bind(null, 'slotTwo')}), 
+	              React.createElement("td", {className: slotThreeClasses, onMouseEnter: this.props.handleSlotMouseEnter.bind(null, 'slotThree'), onMouseLeave: this.props.handleSlotMouseLeave.bind(null, 'slotThree'), onClick: this.props.handleSlotClick.bind(null, 'slotThree')}), 
+	              React.createElement("td", {className: slotFourClasses, onMouseEnter: this.props.handleSlotMouseEnter.bind(null, 'slotFour'), onMouseLeave: this.props.handleSlotMouseLeave.bind(null, 'slotFour'), onClick: this.props.handleSlotClick.bind(null, 'slotFour')})
 	            )
 	          )
 	        ), 

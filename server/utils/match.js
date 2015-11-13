@@ -1,8 +1,8 @@
 var matchdata = require('./matchdata.js');
 var heroCounters = matchdata.counters;
 
-var match = function(enemyTeam) {
-  var map = {
+var generateEmptyResults = function() {
+  return {
     abbadon: 0,
     alchemist: 0,
     ancientapparition: 0,
@@ -114,6 +114,10 @@ var match = function(enemyTeam) {
     witchdoctor: 0,
     zeus: 0
   };
+};
+
+var match = function(enemyTeam) {
+  var map = generateEmptyResults();
   for (var i = 0; i < enemyTeam.length; i++) {
     for (var counter in heroCounters[enemyTeam[i]]) {
       map[counter] += heroCounters[enemyTeam[i]][counter];

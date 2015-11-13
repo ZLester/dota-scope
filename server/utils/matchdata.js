@@ -75,7 +75,7 @@ exports.counters = {
     alchemist: 0,
     ancientapparition: 5,
     antimage: 5,
-    axe: -6,
+    axe: -6, // debuggin, -3
     bane: 5,
     batrider: 0,
     beastmaster: 0,

@@ -11,6 +11,7 @@ var App = React.createClass({
     return ({
       // Initial/Default State for Hero MouseOver Message
       heroMouseOver: 'Select a Hero',
+
       // Initial/Default State for Selected Hero Portraits
       selectorStates: {
         slotZero: {hero: '', hover: false},
@@ -71,9 +72,22 @@ var App = React.createClass({
     newStates[slot].hero = '';
     this.setState({selectorStates: newStates});
   },
+  // MouseEnter Listener for HeroGrid 
+  handleSlotMouseEnter (slot) {
+    var newStates = this.state.selectorStates;
+    newStates[slot].hover = true;
+    this.setState({selectorStates: newStates});
+  },
+  // MouseLeave Listener for HeroGrid 
+  handleSlotMouseLeave (slot) {
+    var newStates = this.state.selectorStates;
+    newStates[slot].hover = false;
+    this.setState({selectorStates: newStates});
+  },
+
   // Click Listener for Submit Button
   handleSubmitClick () {
-    if (this.state.displayGrid) {
+    if (this.state.displayGrid && this.state.buttonStates.submitHeroes.enabled) {
       var url = 'api/match?';
       var queryUrl = Object.keys(this.state.selectorStates).reduce((urlStr, state) => {
         var heroStr = this.state.selectorStates[state].hero || 'empty';
@@ -85,11 +99,7 @@ var App = React.createClass({
         this.setState({displayGrid: false, counterStates: result});
       })
     } else {
-      this.setState({displayGrid: true, counterStates: {
-        greatCounters: [],
-        counters: [],
-        avoid: []
-      }});
+      this.setState({displayGrid: true});
     }
 
   },
@@ -129,11 +139,9 @@ var App = React.createClass({
           handleClearClick={this.handleClearClick}
           handleButtonMouseEnter={this.handleButtonMouseEnter}
           handleButtonMouseLeave={this.handleButtonMouseLeave}
-          slotZero={this.state.selectorStates.slotZero} // Refactor to only pass the object rather than individual slots
-          slotOne={this.state.selectorStates.slotOne} 
-          slotTwo={this.state.selectorStates.slotTwo} 
-          slotThree={this.state.selectorStates.slotThree}
-          slotFour={this.state.selectorStates.slotFour} 
+          handleSlotMouseEnter={this.handleSlotMouseEnter}
+          handleSlotMouseLeave={this.handleSlotMouseLeave}
+          selectorStates={this.state.selectorStates}
           displayGrid={this.state.displayGrid}
           counterStates={this.state.counterStates}
           buttonStates={this.state.buttonStates} />
