@@ -4,6 +4,7 @@
   "description": "Dota 2 Counterpicker",
   "main": "app.js",
   "scripts": {
+    "start": "open build/index.html",
     "build": "webpack",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
