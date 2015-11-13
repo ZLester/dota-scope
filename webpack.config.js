@@ -8,7 +8,11 @@ var config = {
            {
                test: /\.jsx$/,
                loader: 'jsx-loader?insertPragma=React.DOM&harmony'
-           }
+           },
+           // {
+           //   test: /\.css$/, 
+           //   loader: 'style-loader!css-loader' },
+           // }
        ]
    },
    externals: {
