@@ -47,7 +47,7 @@ exports.direInt = [
 
 exports.nameHash = {
   abbadon: 'Abbadon',
-  alchemist: 'Alchemsist',
+  alchemist: 'Alchemist',
   ancientapparition: 'Ancient Apparition',
   antimage: 'Anti-Mage',
   axe: 'Axe',

@@ -118,12 +118,15 @@ var generateEmptyResults = function() {
 
 var match = function(enemyTeam) {
   var map = generateEmptyResults();
+
   for (var i = 0; i < enemyTeam.length; i++) {
+    enemyTeam[i] = enemyTeam[i].toLowerCase().replace(/[^a-z]+/g, '')
     for (var counter in heroCounters[enemyTeam[i]]) {
       map[counter] += heroCounters[enemyTeam[i]][counter];
     }
   }
   for (var j = 0; j < enemyTeam.length; j++) {
+    console.log('deleted ' + enemyTeam[j]);
     delete map[enemyTeam[j]];
   }
   var results = Object.keys(map).reduce(function(counterList, hero) {

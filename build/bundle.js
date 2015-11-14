@@ -18991,8 +18991,6 @@
 	exports.generateResultsGrid = function(data, context) {
 
 	  var tds = data.map(function (hero) {
-	    console.log(heroNames.nameHash);
-	    console.log('!')
 	    var heroClassNames = generateClasses.result(hero, context);
 	    return (
 	      React.createElement("td", {
@@ -19222,7 +19220,7 @@
 
 	exports.nameHash = {
 	  abbadon: 'Abbadon',
-	  alchemist: 'Alchemsist',
+	  alchemist: 'Alchemist',
 	  ancientapparition: 'Ancient Apparition',
 	  antimage: 'Anti-Mage',
 	  axe: 'Axe',
