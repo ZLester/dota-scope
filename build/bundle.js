@@ -68,8 +68,8 @@
 	      },
 	      // Initial/Default States for Submit/Clear Buttons
 	      buttonStates: {
-	        submitHeroes: {enabled: true, hover: false},
-	        clearHeroes: {enabled: true, hover: false}
+	        submitHeroes: {hover: false},
+	        clearHeroes: {hover: false}
 	      },
 	      displayGrid: true,
 	      // Initial/Default States for Hero Counters
@@ -114,9 +114,11 @@
 	  // Click Listener for Selected Hero Portrait
 	  handleSlotClick:function (slot) {
 	    // Mutates here, refactor later
-	    var newStates = this.state.selectorStates;
-	    newStates[slot].hero = '';
-	    this.setState({selectorStates: newStates});
+	    if (this.state.displayGrid) {
+	      var newStates = this.state.selectorStates;
+	      newStates[slot].hero = '';
+	      this.setState({selectorStates: newStates});
+	    }
 	  },
 	  // MouseEnter Listener for HeroGrid 
 	  handleSlotMouseEnter:function (slot) {
@@ -130,10 +132,30 @@
 	    newStates[slot].hover = false;
 	    this.setState({selectorStates: newStates});
 	  },
+	  // Temporary, refactor as state
+	  submitIsEnabled:function () {
+	    for (var state in this.state.selectorStates) {
+	      if (this.state.selectorStates[state].hero !== '') {
+	        return true;
+	      }
+	    }
+	    return false;
+	  },
+	  // Temporary, refactor as state
+	  clearIsEnabled:function () {
+	    if (this.state.displayGrid && this.clearIsEnabled) {
+	      for (var state in this.state.selectorStates) {
+	        if (this.state.selectorStates[state].hero !== '') {
+	          return true;
+	        }
+	      }
+	    }
+	    return false;
+	  },
 
 	  // Click Listener for Submit Button
 	  handleSubmitClick:function () {
-	    if (this.state.displayGrid && this.state.buttonStates.submitHeroes.enabled) {
+	    if (this.state.displayGrid && this.submitIsEnabled()) {
 	      var url = 'api/match?';
 	      var queryUrl = Object.keys(this.state.selectorStates).reduce(function(urlStr, state)  {
 	        var heroStr = this.state.selectorStates[state].hero || 'empty';
@@ -151,7 +173,7 @@
 	  },
 	  // Click Listener for Clear Button
 	  handleClearClick:function () {
-	    if (this.state.buttonStates.clearHeroes.enabled) {
+	    if (this.clearIsEnabled()) {
 	      var newStates = {
 	        slotZero: {hero: '', hover: false},
 	        slotOne: {hero: '', hover: false},
@@ -19003,11 +19025,37 @@
 	  return cx(classNames);
 	}
 
-	exports.button = function (button, context) {
+	exports.submitButton = function (button, context) {
+	  var isDisabled = function() {
+	    for (var state in context.props.selectorStates) {
+	      if (context.props.selectorStates[state].hero !== '') {
+	        return false;
+	      }
+	    }
+	    return true;
+	  }
 	  var classNames = {};
 	  classNames[button] = true;
-	  classNames[button + 'Disabled'] = context.props.buttonStates[button].enabled === false;
-	  classNames[button + 'Hover'] = context.props.buttonStates[button].hover === true &&  context.props.buttonStates[button].enabled === true;
+	  classNames[button + 'Disabled'] = isDisabled();
+	  classNames[button + 'Hover'] = !isDisabled() &&  context.props.buttonStates[button].hover === true;
+	  return cx(classNames);
+	}
+
+	exports.clearButton = function (button, context) {
+	  var isDisabled = function() {
+	    if (context.props.displayGrid) {
+	      for (var state in context.props.selectorStates) {
+	        if (context.props.selectorStates[state].hero !== '') {
+	          return false;
+	        }
+	      }
+	    } 
+	    return true;
+	  }
+	  var classNames = {};
+	  classNames[button] = true;
+	  classNames[button + 'Disabled'] = isDisabled();
+	  classNames[button + 'Hover'] = !isDisabled() &&  context.props.buttonStates[button].hover === true;
 	  return cx(classNames);
 	}
 
@@ -19299,8 +19347,8 @@
 	    var slotTwoClasses = generateClasses.slot('slotTwo', this);
 	    var slotThreeClasses = generateClasses.slot('slotThree', this);
 	    var slotFourClasses = generateClasses.slot('slotFour', this);
-	    var submitHeroesClasses = generateClasses.button('submitHeroes', this);
-	    var clearHeroesClasses = generateClasses.button('clearHeroes', this);
+	    var submitHeroesClasses = generateClasses.submitButton('submitHeroes', this);
+	    var clearHeroesClasses = generateClasses.clearButton('clearHeroes', this);
 	    return (
 	      React.createElement("div", {className: "heroSelectorWrapper"}, 
 	        React.createElement("table", {className: "heroSelector"}, 

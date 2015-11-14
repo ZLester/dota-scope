@@ -10,11 +10,37 @@ exports.slot = function (slot, context) {
   return cx(classNames);
 }
 
-exports.button = function (button, context) {
+exports.submitButton = function (button, context) {
+  var isDisabled = function() {
+    for (var state in context.props.selectorStates) {
+      if (context.props.selectorStates[state].hero !== '') {
+        return false;
+      }
+    }
+    return true;
+  }
   var classNames = {};
   classNames[button] = true;
-  classNames[button + 'Disabled'] = context.props.buttonStates[button].enabled === false;
-  classNames[button + 'Hover'] = context.props.buttonStates[button].hover === true &&  context.props.buttonStates[button].enabled === true;
+  classNames[button + 'Disabled'] = isDisabled();
+  classNames[button + 'Hover'] = !isDisabled() &&  context.props.buttonStates[button].hover === true;
+  return cx(classNames);
+}
+
+exports.clearButton = function (button, context) {
+  var isDisabled = function() {
+    if (context.props.displayGrid) {
+      for (var state in context.props.selectorStates) {
+        if (context.props.selectorStates[state].hero !== '') {
+          return false;
+        }
+      }
+    } 
+    return true;
+  }
+  var classNames = {};
+  classNames[button] = true;
+  classNames[button + 'Disabled'] = isDisabled();
+  classNames[button + 'Hover'] = !isDisabled() &&  context.props.buttonStates[button].hover === true;
   return cx(classNames);
 }
 

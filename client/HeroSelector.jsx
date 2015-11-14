@@ -15,8 +15,8 @@ var HeroSelector = React.createClass({
     var slotTwoClasses = generateClasses.slot('slotTwo', this);
     var slotThreeClasses = generateClasses.slot('slotThree', this);
     var slotFourClasses = generateClasses.slot('slotFour', this);
-    var submitHeroesClasses = generateClasses.button('submitHeroes', this);
-    var clearHeroesClasses = generateClasses.button('clearHeroes', this);
+    var submitHeroesClasses = generateClasses.submitButton('submitHeroes', this);
+    var clearHeroesClasses = generateClasses.clearButton('clearHeroes', this);
     return (
       <div className='heroSelectorWrapper'>
         <table className='heroSelector'>

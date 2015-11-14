@@ -22,8 +22,8 @@ var App = React.createClass({
       },
       // Initial/Default States for Submit/Clear Buttons
       buttonStates: {
-        submitHeroes: {enabled: true, hover: false},
-        clearHeroes: {enabled: true, hover: false}
+        submitHeroes: {hover: false},
+        clearHeroes: {hover: false}
       },
       displayGrid: true,
       // Initial/Default States for Hero Counters
@@ -68,9 +68,11 @@ var App = React.createClass({
   // Click Listener for Selected Hero Portrait
   handleSlotClick (slot) {
     // Mutates here, refactor later
-    var newStates = this.state.selectorStates;
-    newStates[slot].hero = '';
-    this.setState({selectorStates: newStates});
+    if (this.state.displayGrid) {
+      var newStates = this.state.selectorStates;
+      newStates[slot].hero = '';
+      this.setState({selectorStates: newStates});
+    }
   },
   // MouseEnter Listener for HeroGrid 
   handleSlotMouseEnter (slot) {
@@ -84,10 +86,30 @@ var App = React.createClass({
     newStates[slot].hover = false;
     this.setState({selectorStates: newStates});
   },
+  // Temporary, refactor as state
+  submitIsEnabled () {
+    for (var state in this.state.selectorStates) {
+      if (this.state.selectorStates[state].hero !== '') {
+        return true;
+      }
+    }
+    return false;
+  },
+  // Temporary, refactor as state
+  clearIsEnabled () {
+    if (this.state.displayGrid && this.clearIsEnabled) {
+      for (var state in this.state.selectorStates) {
+        if (this.state.selectorStates[state].hero !== '') {
+          return true;
+        }
+      }
+    }
+    return false;
+  },
 
   // Click Listener for Submit Button
   handleSubmitClick () {
-    if (this.state.displayGrid && this.state.buttonStates.submitHeroes.enabled) {
+    if (this.state.displayGrid && this.submitIsEnabled()) {
       var url = 'api/match?';
       var queryUrl = Object.keys(this.state.selectorStates).reduce((urlStr, state) => {
         var heroStr = this.state.selectorStates[state].hero || 'empty';
@@ -105,7 +127,7 @@ var App = React.createClass({
   },
   // Click Listener for Clear Button
   handleClearClick () {
-    if (this.state.buttonStates.clearHeroes.enabled) {
+    if (this.clearIsEnabled()) {
       var newStates = {
         slotZero: {hero: '', hover: false},
         slotOne: {hero: '', hover: false},
