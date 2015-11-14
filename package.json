@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server/index.js",
     "build": "webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
+    "test": "jest"
+    // "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "babel-core": "^6.1.2",
     "babel-loader": "^6.0.1",
+    "jest-cli": "^0.7.1",
     "jsx-loader": "^0.13.2",
     "webpack": "^1.12.3"
   }
