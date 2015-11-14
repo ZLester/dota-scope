@@ -1,6 +1,6 @@
 var React = require('react');
 var cx = require('classnames');
-var generateClasses = require('./utils/generateClasses.js');
+var generateClasses = require('./utils/generateclasses.js');
 
 var HeroSelector = React.createClass({
   propTypes: {

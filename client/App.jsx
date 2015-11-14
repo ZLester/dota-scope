@@ -76,15 +76,18 @@ var App = React.createClass({
   },
   // MouseEnter Listener for HeroGrid 
   handleSlotMouseEnter (slot) {
-    var newStates = this.state.selectorStates;
-    newStates[slot].hover = true;
-    this.setState({selectorStates: newStates});
+    if (this.state.selectorStates[slot].hero !== '') {
+      var newStatesSelector = this.state.selectorStates;
+      var newStatesHeroMouseOver = this.state.selectorStates[slot].hero;
+      newStatesSelector[slot].hover = true;
+      this.setState({selectorStates: newStatesSelector, heroMouseOver: newStatesHeroMouseOver});
+    }
   },
   // MouseLeave Listener for HeroGrid 
   handleSlotMouseLeave (slot) {
     var newStates = this.state.selectorStates;
     newStates[slot].hover = false;
-    this.setState({selectorStates: newStates});
+    this.setState({selectorStates: newStates, heroMouseOver: 'Select a Hero'});
   },
   // Temporary, refactor as state
   submitIsEnabled () {

@@ -122,15 +122,18 @@
 	  },
 	  // MouseEnter Listener for HeroGrid 
 	  handleSlotMouseEnter:function (slot) {
-	    var newStates = this.state.selectorStates;
-	    newStates[slot].hover = true;
-	    this.setState({selectorStates: newStates});
+	    if (this.state.selectorStates[slot].hero !== '') {
+	      var newStatesSelector = this.state.selectorStates;
+	      var newStatesHeroMouseOver = this.state.selectorStates[slot].hero;
+	      newStatesSelector[slot].hover = true;
+	      this.setState({selectorStates: newStatesSelector, heroMouseOver: newStatesHeroMouseOver});
+	    }
 	  },
 	  // MouseLeave Listener for HeroGrid 
 	  handleSlotMouseLeave:function (slot) {
 	    var newStates = this.state.selectorStates;
 	    newStates[slot].hover = false;
-	    this.setState({selectorStates: newStates});
+	    this.setState({selectorStates: newStates, heroMouseOver: 'Select a Hero'});
 	  },
 	  // Temporary, refactor as state
 	  submitIsEnabled:function () {
@@ -18925,7 +18928,6 @@
 	        )
 	      );
 	    } else {
-
 	      var greatCounters = mapHeroes.generateResultsGrid(this.props.counterStates.greatCounters, this);
 	      var counters = mapHeroes.generateResultsGrid(this.props.counterStates.counters, this);
 	      var avoid = mapHeroes.generateResultsGrid(this.props.counterStates.avoid, this);
@@ -18963,6 +18965,7 @@
 
 	/** @jsx React.DOM */var React = __webpack_require__(1);
 	var generateClasses = __webpack_require__(152);
+	var heroNames = __webpack_require__(154);
 
 	exports.generateSelectGrid = function(data, context) {
 	  var result = data.map(function (row, index) {
@@ -18986,14 +18989,17 @@
 	};
 
 	exports.generateResultsGrid = function(data, context) {
+
 	  var tds = data.map(function (hero) {
+	    console.log(heroNames.nameHash);
+	    console.log('!')
 	    var heroClassNames = generateClasses.result(hero, context);
 	    return (
 	      React.createElement("td", {
 	        className: heroClassNames, 
 	        key: hero, 
-	        onMouseEnter: context.props.handleHeroMouseEnter.bind(null, hero), 
-	        onMouseLeave: context.props.handleHeroMouseLeave.bind(null, hero)}
+	        onMouseEnter: context.props.handleHeroMouseEnter.bind(null, heroNames.nameHash[hero]), 
+	        onMouseLeave: context.props.handleHeroMouseLeave.bind(null, heroNames.nameHash[hero])}
 	      )
 	    );
 	  }, context)
@@ -19014,6 +19020,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var cx = __webpack_require__(153);
+	var heroNames = __webpack_require__(154);
 
 	exports.slot = function (slot, context) {
 	  var classNames = {
@@ -19089,7 +19096,7 @@
 
 	exports.result = function(hero, context) {
 	  var checkHeroHover = function (hero, context) {
-	    if (context.props.hoverState === hero) {
+	    if (context.props.hoverState === heroNames.nameHash[hero]) {
 	      return true;
 	    }
 	    return false;
@@ -19297,33 +19304,33 @@
 	  slardar: 'Slardar',
 	  slark: 'Slark',
 	  sniper: 'Sniper',
-	  spectre: 0,
-	  spiritbreaker: 0,
-	  stormspirit: 0,
-	  sven: 0,
-	  techies: 0,
-	  templarassassin: 0,
-	  terrorblade: 0,
-	  tidehunter: 0,
-	  timbersaw: 0,
-	  tinker: 0,
-	  tiny: 0,
-	  treantprotector: 0,
-	  trollwarlord: 0,
-	  tusk: 0,
-	  undying: 0,
-	  ursa: 0,
-	  vengefulspirit: 0,
-	  venomancer: 0,
-	  viper: 0,
-	  visage: 0,
-	  warlock: 0,
-	  weaver: 0,
-	  windrunner: 0,
-	  winterwyvern: 0,
-	  io: 0,
-	  witchdoctor: 0,
-	  zeus: 0
+	  spectre: 'Spectre',
+	  spiritbreaker: 'Spiritbreaker',
+	  stormspirit: 'Storm Spirit',
+	  sven: 'Sven',
+	  techies: 'Techies',
+	  templarassassin: 'Templar Assassin',
+	  terrorblade: 'Terrorblade',
+	  tidehunter: 'Tidehunter',
+	  timbersaw: 'Timbersaw',
+	  tinker: 'Tinker',
+	  tiny: 'Tiny',
+	  treantprotector: 'Treant Protector',
+	  trollwarlord: 'Troll Warlord',
+	  tusk: 'Tusk',
+	  undying: 'Undying',
+	  ursa: 'Ursa',
+	  vengefulspirit: 'Vengeful Spirit',
+	  venomancer: 'Venomancer',
+	  viper: 'Viper',
+	  visage: 'Visage',
+	  warlock: 'Warlock',
+	  weaver: 'Weaver',
+	  windrunner: 'Windrunner',
+	  winterwyvern: 'Winter Wyvern',
+	  io: 'Io',
+	  witchdoctor: 'Witch Doctor',
+	  zeus: 'Zeus'
 	};
 
 /***/ },

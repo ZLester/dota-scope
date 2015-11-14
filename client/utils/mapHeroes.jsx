@@ -1,5 +1,6 @@
 var React = require('react');
-var generateClasses = require('./generateClasses.js');
+var generateClasses = require('./generateclasses.js');
+var heroNames = require('./heronames.js');
 
 exports.generateSelectGrid = function(data, context) {
   var result = data.map(function (row, index) {
@@ -23,14 +24,17 @@ exports.generateSelectGrid = function(data, context) {
 };
 
 exports.generateResultsGrid = function(data, context) {
+
   var tds = data.map(function (hero) {
+    console.log(heroNames.nameHash);
+    console.log('!')
     var heroClassNames = generateClasses.result(hero, context);
     return (
       <td
         className={heroClassNames}
         key={hero} 
-        onMouseEnter={context.props.handleHeroMouseEnter.bind(null, hero)} 
-        onMouseLeave={context.props.handleHeroMouseLeave.bind(null, hero)} >
+        onMouseEnter={context.props.handleHeroMouseEnter.bind(null, heroNames.nameHash[hero])} 
+        onMouseLeave={context.props.handleHeroMouseLeave.bind(null, heroNames.nameHash[hero])} >
       </td>
     );
   }, context)

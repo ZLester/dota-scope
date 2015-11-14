@@ -1,4 +1,5 @@
 var cx = require('classnames');
+var heroNames = require('./heronames.js');
 
 exports.slot = function (slot, context) {
   var classNames = {
@@ -74,7 +75,7 @@ exports.hero = function(hero, context) {
 
 exports.result = function(hero, context) {
   var checkHeroHover = function (hero, context) {
-    if (context.props.hoverState === hero) {
+    if (context.props.hoverState === heroNames.nameHash[hero]) {
       return true;
     }
     return false;

@@ -51,7 +51,6 @@ var HeroGrid = React.createClass({
         </div>
       );
     } else {
-
       var greatCounters = mapHeroes.generateResultsGrid(this.props.counterStates.greatCounters, this);
       var counters = mapHeroes.generateResultsGrid(this.props.counterStates.counters, this);
       var avoid = mapHeroes.generateResultsGrid(this.props.counterStates.avoid, this);
