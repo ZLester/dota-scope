@@ -7,7 +7,6 @@
     "start": "node server/index.js",
     "build": "webpack",
     "test": "jest"
-    // "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "author": "",
   "license": "ISC",

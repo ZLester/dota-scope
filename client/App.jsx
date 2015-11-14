@@ -160,3 +160,5 @@ var App = React.createClass({
 });
 
 ReactDOM.render(<App />, document.getElementById('appWrapper'));
+
+module.exports = App;
