@@ -7956,7 +7956,7 @@ exports.counters = {
     alchemist: 0,
     ancientapparition: 5,
     antimage: 5,
-    axe: -6, // debuggin, -3
+    axe: -6, // debugging, -3
     bane: 5,
     batrider: 0,
     beastmaster: 0,
@@ -7992,7 +7992,7 @@ exports.counters = {
     juggernaut: 5,
     keeperofthelight: 5,
     kunkka: 0,
-    legioncommander: -5,
+    legioncommander: -6,
     leshrac: -3,
     lich: 0,
     lifestealer: 5,
