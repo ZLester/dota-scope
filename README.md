@@ -1,2 +1,2 @@
 ## Dota Scope
-### Open Source Dota 2 Counterpicker
+### Open Source Dota 2 AP Counterpicker
