@@ -7956,12 +7956,12 @@ exports.counters = {
     alchemist: 0,
     ancientapparition: 5,
     antimage: 5,
-    axe: -6, // debugging, -3
+    axe: -3,
     bane: 5,
     batrider: 0,
     beastmaster: 0,
     bloodseeker: 0,
-    bountyhunter: -6, // debugging, -3
+    bountyhunter: -3,
     brewmaster: 0,
     bristleback: 0,
     broodmother: -5,
@@ -7992,7 +7992,7 @@ exports.counters = {
     juggernaut: 5,
     keeperofthelight: 5,
     kunkka: 0,
-    legioncommander: -6,
+    legioncommander: -5,
     leshrac: -3,
     lich: 0,
     lifestealer: 5,
@@ -8032,7 +8032,7 @@ exports.counters = {
     silencer: -5,
     wraithking: 5,
     skywrathmage: -5,
-    slardar: -6, //debugging -5
+    slardar: -5, //debugging -5
     slark: 5,
     sniper: 5,
     spectre: 0,
