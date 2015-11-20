@@ -1,3 +1,4 @@
+// Temporary store until DB refactor.
 exports.counters = {
   abbadon: {
     abbadon: 0,
