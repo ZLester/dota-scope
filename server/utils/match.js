@@ -126,7 +126,6 @@ var match = function(enemyTeam) {
     }
   }
   for (var j = 0; j < enemyTeam.length; j++) {
-    console.log('deleted ' + enemyTeam[j]);
     delete map[enemyTeam[j]];
   }
   var results = Object.keys(map).reduce(function(counterList, hero) {
