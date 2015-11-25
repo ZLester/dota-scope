@@ -2,11 +2,13 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var path = require('path');
-var port = process.env.PORT || 3000;
-var mongoose = require('mongoose');
 var populateDatabase = require('./utils/populateDatabase.js');
+var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://test:test@ds057934.mongolab.com:57934/heroku_5kt62x61');
+var port = process.env.PORT || 3000;
+var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/dotascope';
+
+mongoose.connect(mongoUri);
 
 var apiRouter = require('./router/apirouter.js');
 
