@@ -1,4 +1,4 @@
-var Hero = require('../models/hero.js');
+var Hero = require('../models/Hero.js');
 
 exports.create = function(heroName, callback) {
   Hero.create(heroName, callback);
