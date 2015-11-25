@@ -10,7 +10,9 @@ apiRouter.route('/match')
       }
       return enemyTeam;
     }, []);
-    res.json(match(enemyTeam));
+    match(enemyTeam, function(err, heroCounters) {
+      res.json(heroCounters);
+    });
   })
 
 module.exports = apiRouter;

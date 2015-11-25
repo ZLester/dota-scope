@@ -114,4 +114,4 @@ var heroSchema = new mongoose.Schema({
   zeus: {type: Number, default: 0}
 });
 
-module.exports = mongoose.model('Hero', heroSchema);
+module.exports = mongoose.model('Hero', heroSchema, 'heroes');

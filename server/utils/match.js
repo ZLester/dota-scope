@@ -1,5 +1,7 @@
 var matchdata = require('./matchdata.js');
+var heroController = require('../controllers/heroController.js');
 var heroCounters = matchdata.counters;
+var Promise = require("bluebird");
 
 var generateEmptyResults = function() {
   return {
@@ -116,29 +118,46 @@ var generateEmptyResults = function() {
   };
 };
 
-var match = function(enemyTeam) {
+var match = function(enemyTeam, outerCallback) {
   var map = generateEmptyResults();
-
+  var matchSingleHero = function(enemyHero, callback) {
+    var curEnemy = enemyHero.toLowerCase().replace(/[^a-z]+/g, '');
+    heroController.findByName(curEnemy, function(err, enemyHero) {
+      if (err) {
+        return callback(err);
+      }
+      callback(null, enemyHero);
+    });
+  }
+  matchSingleHero = Promise.promisify(matchSingleHero);
+  var teamMatches = [];
   for (var i = 0; i < enemyTeam.length; i++) {
-    enemyTeam[i] = enemyTeam[i].toLowerCase().replace(/[^a-z]+/g, '')
-    for (var counter in heroCounters[enemyTeam[i]]) {
-      map[counter] += heroCounters[enemyTeam[i]][counter];
-    }
+    teamMatches.push(matchSingleHero(enemyTeam[i]));
   }
-  for (var j = 0; j < enemyTeam.length; j++) {
-    delete map[enemyTeam[j]];
-  }
-  var results = Object.keys(map).reduce(function(counterList, hero) {
-    if (map[hero] < -5) {
-      counterList['greatCounters'].push(hero);
-    } else if (map[hero] < 0) {
-      counterList['counters'].push(hero);
-    } else if (map[hero] > 0) {
-      counterList['avoid'].push(hero);
+  Promise.all(teamMatches).then(function(enemyTeamRes) {
+    for (var j = 0; j < enemyTeamRes.length; j++) {
+      var curEnemy = enemyTeamRes[j].toJSON();
+      for (var counter in curEnemy) {
+        if (counter !== 'name' && counter !== '__v' && counter !== '_id') {
+          map[counter] += curEnemy[counter];
+        }
+      }
     }
-    return counterList;
-  }, {'greatCounters': [], 'counters': [], 'avoid': []})
-  return results;
-}
+    for (var k = 0; k < enemyTeam.length; k++) {
+      delete map[enemyTeam[k]];
+    }
+    var results = Object.keys(map).reduce(function(counterList, hero) {
+      if (map[hero] < -5) {
+        counterList['greatCounters'].push(hero);
+      } else if (map[hero] < 0) {
+        counterList['counters'].push(hero);
+      } else if (map[hero] > 0) {
+        counterList['avoid'].push(hero);
+      }
+      return counterList;
+    }, {'greatCounters': [], 'counters': [], 'avoid': []})
+    outerCallback(null, results);
+  });
+};
 
 module.exports = match;
