@@ -1,7 +1,7 @@
 var heroController = require('../controllers/heroController.js');
 
 var rikiCounters = {
-  abbadon: 5,
+  abaddon: 5,
   alchemist: 0,
   ancientapparition: 5,
   antimage: 5,
@@ -114,7 +114,7 @@ var rikiCounters = {
 }
 
 var earthshakerCounters = {
-  abbadon: 0,
+  abaddon: 0,
   alchemist: -5,
   ancientapparition: -3,
   antimage: -5,
