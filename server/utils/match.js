@@ -147,11 +147,11 @@ var match = function(enemyTeam, outerCallback) {
       delete map[enemyTeam[k]];
     }
     var results = Object.keys(map).reduce(function(counterList, hero) {
-      if (map[hero] < -5) {
+      if (map[hero] < -3.5) {
         counterList['greatCounters'].push(hero);
-      } else if (map[hero] < 0) {
+      } else if (map[hero] < -1) {
         counterList['counters'].push(hero);
-      } else if (map[hero] > 0) {
+      } else if (map[hero] > 1) {
         counterList['avoid'].push(hero);
       }
       return counterList;

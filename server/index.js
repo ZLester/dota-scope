@@ -17,6 +17,5 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', apiRouter);
 app.use(express.static(path.join(__dirname, "../build")));
 
-populateDatabase();
 console.log('DotaScope Listening on port ' + port);
 app.listen(port);

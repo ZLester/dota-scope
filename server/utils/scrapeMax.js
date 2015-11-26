@@ -2,12 +2,15 @@ var request = require('request');
 var cheerio = require('cheerio');
 var heroController = require('../controllers/heroController.js');
 var mongoose = require('mongoose');
+
 var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/dotascope';
 mongoose.connect(mongoUri);
+
 var heroNames = ['abaddon', 'alchemist', 'ancientapparition', 'antimage', 'axe', 'bane', 'batrider', 'beastmaster', 'bloodseeker', 'bountyhunter', 'brewmaster', 'bristleback', 'broodmother', 'centaurwarrunner', 'chaosknight', 'chen', 'clinkz', 'clockwerk', 'crystalmaiden', 'darkseer', 'dazzle', 'deathprophet', 'disruptor', 'doom', 'dragonknight', 'drowranger', 'earthshaker', 'earthspirit', 'eldertitan', 'emberspirit', 'enchantress', 'enigma', 'facelessvoid', 'gyrocopter', 'huskar', 'invoker', 'jakiro', 'juggernaut', 'keeperofthelight', 'kunkka', 'legioncommander', 'leshrac', 'lich', 'lifestealer', 'lina', 'lion', 'lonedruid', 'luna', 'lycan', 'magnus', 'medusa', 'meepo', 'mirana', 'morphling', 'nagasiren', 'naturesprophet', 'necrophos', 'nightstalker', 'nyxassassin', 'ogremagi', 'omniknight', 'oracle', 'outworlddevourer', 'phantomassassin', 'phantomlancer', 'phoenix', 'puck', 'pudge', 'pugna', 'queenofpain', 'razor', 'riki', 'rubick', 'sandking', 'shadowdemon', 'shadowfiend', 'shadowshaman', 'silencer', 'wraithking', 'skywrathmage', 'slardar', 'slark', 'sniper', 'spectre', 'spiritbreaker', 'stormspirit', 'sven', 'techies', 'templarassassin', 'terrorblade', 'tidehunter', 'timbersaw', 'tinker', 'tiny', 'treantprotector', 'trollwarlord', 'tusk', 'undying', 'ursa', 'vengefulspirit', 'venomancer', 'viper', 'visage', 'warlock', 'weaver', 'windrunner', 'winterwyvern', 'io', 'witchdoctor', 'zeus'];
 var curHero = heroNames[0];
 
-url = 'http://dotamax.com/hero/detail/match_up_anti/' + curHero + '/';
+var url = 'http://dotamax.com/hero/detail/match_up_anti/' + curHero + '/';
+
 request(url, function(error, response, html){
   if(!error) {
     var $ = cheerio.load(html);

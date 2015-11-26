@@ -16,10 +16,6 @@ var seedHeroes = function() {
           console.log(err)
           return;
         }
-        // Temporary Stubs
-        if (res.name === 'riki') {
-          addDatabaseStubs();
-        }
       })
     }
 
