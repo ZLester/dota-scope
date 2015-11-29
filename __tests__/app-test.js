@@ -11,7 +11,7 @@
    it('Has the correct default heroMouseOver state', () => {
 
     // Render app into doument
-    var checkbox = TestUtils.renderIntoDocument(
+    var app = TestUtils.renderIntoDocument(
       <App />
     );
 
