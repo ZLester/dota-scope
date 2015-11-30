@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server/index.js",
     "build": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "seed": "node server/utils/seedDatabase.js",
+    "populate": "node server/utils/populateDatabase.js"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
