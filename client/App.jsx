@@ -1,5 +1,4 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
 var Title = require('./title.jsx');
 var HeroHover = require('./herohover.jsx');
 var HeroGrid = require('./herogrid.jsx');
@@ -183,7 +182,5 @@ var App = React.createClass({
     );
   }
 });
-
-ReactDOM.render(<App />, document.getElementById('appWrapper'));
 
 module.exports = App;

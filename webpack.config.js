@@ -1,5 +1,5 @@
 var config = {
-   entry: './client/app.jsx',
+   entry: './client/entry.jsx',
    output: {
        filename: __dirname + '/build/bundle.js'
    },
