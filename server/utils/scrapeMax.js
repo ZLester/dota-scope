@@ -3,8 +3,7 @@ var cheerio = require('cheerio');
 var heroController = require('../controllers/heroController.js');
 var mongoose = require('mongoose');
 
-// var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/dotascope';
-var mongoUri = 'mongodb://heroku_5kt62x61:2t9o3u1u9ki12heh2on7scg4tu@ds057934.mongolab.com:57934/heroku_5kt62x61';
+var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/dotascope';
 mongoose.connect(mongoUri);
 
 var dotaMaxEndpoints = ['abaddon', 'alchemist', 'ancient_apparition', 'antimage', 'axe', 'bane', 'batrider', 'beastmaster', 'bloodseeker', 'bountyhunter', 'brewmaster', 'bristleback', 'broodmother', 'centaurwarrunner', 'chaosknight', 'chen', 'clinkz', 'clockwerk', 'crystalmaiden', 'darkseer', 'dazzle', 'deathprophet', 'disruptor', 'doom', 'dragonknight', 'drowranger', 'earthshaker', 'earthspirit', 'eldertitan', 'emberspirit', 'enchantress', 'enigma', 'facelessvoid', 'gyrocopter', 'huskar', 'invoker', 'jakiro', 'juggernaut', 'keeperofthelight', 'kunkka', 'legioncommander', 'leshrac', 'lich', 'lifestealer', 'lina', 'lion', 'lonedruid', 'luna', 'lycan', 'magnus', 'medusa', 'meepo', 'mirana', 'morphling', 'nagasiren', 'naturesprophet', 'necrophos', 'nightstalker', 'nyxassassin', 'ogremagi', 'omniknight', 'oracle', 'outworlddevourer', 'phantomassassin', 'phantomlancer', 'phoenix', 'puck', 'pudge', 'pugna', 'queenofpain', 'razor', 'riki', 'rubick', 'sandking', 'shadowdemon', 'shadowfiend', 'shadowshaman', 'silencer', 'wraithking', 'skywrathmage', 'slardar', 'slark', 'sniper', 'spectre', 'spiritbreaker', 'stormspirit', 'sven', 'techies', 'templarassassin', 'terrorblade', 'tidehunter', 'timbersaw', 'tinker', 'tiny', 'treantprotector', 'trollwarlord', 'tusk', 'undying', 'ursa', 'vengefulspirit', 'venomancer', 'viper', 'visage', 'warlock', 'weaver', 'windrunner', 'winterwyvern', 'wisp', 'witchdoctor', 'zeus'];
