@@ -1,5 +1,4 @@
- // __tests__/CheckboxWithLabel-test.js
- jest.dontMock('../client/app.jsx');
+ jest.dontMock('../client/title.jsx');
 
  var React = require('react');
  var ReactDOM = require('react-dom');
@@ -10,14 +9,12 @@
 
    it('Has the correct default title', () => {
 
-    // Render app into doument
-    var app = TestUtils.renderIntoDocument(
+    var title = TestUtils.renderIntoDocument(
       <Title />
     );
 
-    var appNode = ReactDOM.findDOMNode(app);
-
-    // Verify that it has 'Select a Hero' as the default heroMouseOver state
+    var appNode = ReactDOM.findDOMNode(title);
+    
     expect(appNode.textContent).toEqual('Dota Scope');
 
    });
