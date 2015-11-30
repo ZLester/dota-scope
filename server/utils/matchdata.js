@@ -1,7 +1,7 @@
 // Temporary store until DB refactor.
 exports.counters = {
-  abbadon: {
-    abbadon: 0,
+  abaddon: {
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -113,7 +113,7 @@ exports.counters = {
     zeus: 0
   },
   alchemist: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -225,7 +225,7 @@ exports.counters = {
     zeus: 0
   },
   ancientapparition: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -337,7 +337,7 @@ exports.counters = {
     zeus: 0
   },
   antimage: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -449,7 +449,7 @@ exports.counters = {
     zeus: 0
   },
   axe: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -561,7 +561,7 @@ exports.counters = {
     zeus: 0
   },
   bane: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -673,7 +673,7 @@ exports.counters = {
     zeus: 0
   },
   batrider: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -785,7 +785,7 @@ exports.counters = {
     zeus: 0
   },
   beastmaster: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -897,7 +897,7 @@ exports.counters = {
     zeus: 0
   },
   bloodseeker: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1009,7 +1009,7 @@ exports.counters = {
     zeus: 0
   },
   bountyhunter: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1121,7 +1121,7 @@ exports.counters = {
     zeus: 0
   },
   brewmaster: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1233,7 +1233,7 @@ exports.counters = {
     zeus: 0
   },
   bristleback: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1345,7 +1345,7 @@ exports.counters = {
     zeus: 0
   },
   broodmother: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1457,7 +1457,7 @@ exports.counters = {
     zeus: 0
   },
   centaurwarrunner: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1569,7 +1569,7 @@ exports.counters = {
     zeus: 0
   },
   chaosknight: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1681,7 +1681,7 @@ exports.counters = {
     zeus: 0
   },
   chen: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1793,7 +1793,7 @@ exports.counters = {
     zeus: 0
   },
   clinkz: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -1905,7 +1905,7 @@ exports.counters = {
     zeus: 0
   },
   clockwerk: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2017,7 +2017,7 @@ exports.counters = {
     zeus: 0
   },
   crystalmaiden: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2129,7 +2129,7 @@ exports.counters = {
     zeus: 0
   },
   darkseer: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2241,7 +2241,7 @@ exports.counters = {
     zeus: 0
   },
   dazzle: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2353,7 +2353,7 @@ exports.counters = {
     zeus: 0
   },
   deathprophet: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2465,7 +2465,7 @@ exports.counters = {
     zeus: 0
   },
   disruptor: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2577,7 +2577,7 @@ exports.counters = {
     zeus: 0
   },
   doom: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2689,7 +2689,7 @@ exports.counters = {
     zeus: 0
   },
   dragonknight: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2801,7 +2801,7 @@ exports.counters = {
     zeus: 0
   },
   drowranger: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -2913,7 +2913,7 @@ exports.counters = {
     zeus: 0
   },
   earthshaker: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: -5,
     ancientapparition: -3,
     antimage: -5,
@@ -3025,7 +3025,7 @@ exports.counters = {
     zeus: -5
   },
   earthspirit: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3137,7 +3137,7 @@ exports.counters = {
     zeus: 0
   },
   eldertitan: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3249,7 +3249,7 @@ exports.counters = {
     zeus: 0
   },
   emberspirit: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3361,7 +3361,7 @@ exports.counters = {
     zeus: 0
   },
   enchantress: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3473,7 +3473,7 @@ exports.counters = {
     zeus: 0
   },
   enigma: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3585,7 +3585,7 @@ exports.counters = {
     zeus: 0
   },
   facelessvoid: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3697,7 +3697,7 @@ exports.counters = {
     zeus: 0
   },
   gyrocopter: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3809,7 +3809,7 @@ exports.counters = {
     zeus: 0
   },
   huskar: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -3921,7 +3921,7 @@ exports.counters = {
     zeus: 0
   },
   invoker: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4033,7 +4033,7 @@ exports.counters = {
     zeus: 0
   },
   jakiro: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4145,7 +4145,7 @@ exports.counters = {
     zeus: 0
   },
   juggernaut: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4257,7 +4257,7 @@ exports.counters = {
     zeus: 0
   },
   keeperofthelight: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4369,7 +4369,7 @@ exports.counters = {
     zeus: 0
   },
   kunkka: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4481,7 +4481,7 @@ exports.counters = {
     zeus: 0
   },
   legioncommander: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4593,7 +4593,7 @@ exports.counters = {
     zeus: 0
   },
   leshrac: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4705,7 +4705,7 @@ exports.counters = {
     zeus: 0
   },
   lich: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4817,7 +4817,7 @@ exports.counters = {
     zeus: 0
   },
   lifestealer: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -4929,7 +4929,7 @@ exports.counters = {
     zeus: 0
   },
   lina: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5041,7 +5041,7 @@ exports.counters = {
     zeus: 0
   },
   lion: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5153,7 +5153,7 @@ exports.counters = {
     zeus: 0
   },
   lonedruid: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5265,7 +5265,7 @@ exports.counters = {
     zeus: 0
   },
   luna: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5377,7 +5377,7 @@ exports.counters = {
     zeus: 0
   },
   lycan: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5489,7 +5489,7 @@ exports.counters = {
     zeus: 0
   },
   magnus: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5601,7 +5601,7 @@ exports.counters = {
     zeus: 0
   },
   medusa: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5713,7 +5713,7 @@ exports.counters = {
     zeus: 0
   },
   meepo: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5825,7 +5825,7 @@ exports.counters = {
     zeus: 0
   },
   mirana: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -5937,7 +5937,7 @@ exports.counters = {
     zeus: 0
   },
   morphling: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6049,7 +6049,7 @@ exports.counters = {
     zeus: 0
   },
   nagasiren: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6161,7 +6161,7 @@ exports.counters = {
     zeus: 0
   },
   naturesprophet: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6273,7 +6273,7 @@ exports.counters = {
     zeus: 0
   },
   necrophos: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6385,7 +6385,7 @@ exports.counters = {
     zeus: 0
   },
   nightstalker: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6497,7 +6497,7 @@ exports.counters = {
     zeus: 0
   },
   nyxassassin: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6609,7 +6609,7 @@ exports.counters = {
     zeus: 0
   },
   ogremagi: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6721,7 +6721,7 @@ exports.counters = {
     zeus: 0
   },
   omniknight: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6833,7 +6833,7 @@ exports.counters = {
     zeus: 0
   },
   oracle: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -6945,7 +6945,7 @@ exports.counters = {
     zeus: 0
   },
   outworlddevourer: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7057,7 +7057,7 @@ exports.counters = {
     zeus: 0
   },
   phantomassassin: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7169,7 +7169,7 @@ exports.counters = {
     zeus: 0
   },
   phantomlancer: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7281,7 +7281,7 @@ exports.counters = {
     zeus: 0
   },
   phoenix: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7393,7 +7393,7 @@ exports.counters = {
     zeus: 0
   },
   puck: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7505,7 +7505,7 @@ exports.counters = {
     zeus: 0
   },
   pudge: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7617,7 +7617,7 @@ exports.counters = {
     zeus: 0
   },
   pugna: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7729,7 +7729,7 @@ exports.counters = {
     zeus: 0
   },
   queenofpain: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7841,7 +7841,7 @@ exports.counters = {
     zeus: 0
   },
   razor: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -7953,7 +7953,7 @@ exports.counters = {
     zeus: 0
   },
   riki: {
-    abbadon: 5,
+    abaddon: 5,
     alchemist: 0,
     ancientapparition: 5,
     antimage: 5,
@@ -8065,7 +8065,7 @@ exports.counters = {
     zeus: -3
   },
   rubick: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8177,7 +8177,7 @@ exports.counters = {
     zeus: 0
   },
   sandking: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8289,7 +8289,7 @@ exports.counters = {
     zeus: 0
   },
   shadowdemon: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8401,7 +8401,7 @@ exports.counters = {
     zeus: 0
   },
   shadowfiend: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8513,7 +8513,7 @@ exports.counters = {
     zeus: 0
   },
   shadowshaman: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8625,7 +8625,7 @@ exports.counters = {
     zeus: 0
   },
   silencer: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8737,7 +8737,7 @@ exports.counters = {
     zeus: 0
   },
   wraithking: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8849,7 +8849,7 @@ exports.counters = {
     zeus: 0
   },
   skywrathmage: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -8961,7 +8961,7 @@ exports.counters = {
     zeus: 0
   },
   slardar: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9073,7 +9073,7 @@ exports.counters = {
     zeus: 0
   },
   slark: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9185,7 +9185,7 @@ exports.counters = {
     zeus: 0
   },
   sniper: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9297,7 +9297,7 @@ exports.counters = {
     zeus: 0
   },
   spectre: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9409,7 +9409,7 @@ exports.counters = {
     zeus: 0
   },
   spiritbreaker: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9521,7 +9521,7 @@ exports.counters = {
     zeus: 0
   },
   stormspirit: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9633,7 +9633,7 @@ exports.counters = {
     zeus: 0
   },
   sven: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9745,7 +9745,7 @@ exports.counters = {
     zeus: 0
   },
   techies: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9857,7 +9857,7 @@ exports.counters = {
     zeus: 0
   },
   templarassassin: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -9969,7 +9969,7 @@ exports.counters = {
     zeus: 0
   },
   terrorblade: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10081,7 +10081,7 @@ exports.counters = {
     zeus: 0
   },
   tidehunter: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10193,7 +10193,7 @@ exports.counters = {
     zeus: 0
   },
   timbersaw: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10305,7 +10305,7 @@ exports.counters = {
     zeus: 0
   },
   tinker: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10417,7 +10417,7 @@ exports.counters = {
     zeus: 0
   },
   tiny: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10529,7 +10529,7 @@ exports.counters = {
     zeus: 0
   },
   treantprotector: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10641,7 +10641,7 @@ exports.counters = {
     zeus: 0
   },
   trollwarlord: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10753,7 +10753,7 @@ exports.counters = {
     zeus: 0
   },
   tusk: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10865,7 +10865,7 @@ exports.counters = {
     zeus: 0
   },
   undying: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -10977,7 +10977,7 @@ exports.counters = {
     zeus: 0
   },
   ursa: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11089,7 +11089,7 @@ exports.counters = {
     zeus: 0
   },
   vengefulspirit: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11201,7 +11201,7 @@ exports.counters = {
     zeus: 0
   },
   venomancer: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11313,7 +11313,7 @@ exports.counters = {
     zeus: 0
   },
   viper: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11425,7 +11425,7 @@ exports.counters = {
     zeus: 0
   },
   visage: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11537,7 +11537,7 @@ exports.counters = {
     zeus: 0
   },
   warlock: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11649,7 +11649,7 @@ exports.counters = {
     zeus: 0
   },
   weaver: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11761,7 +11761,7 @@ exports.counters = {
     zeus: 0
   },
   windrunner: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11873,7 +11873,7 @@ exports.counters = {
     zeus: 0
   },
   winterwyvern: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -11985,7 +11985,7 @@ exports.counters = {
     zeus: 0
   },
   io: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -12097,7 +12097,7 @@ exports.counters = {
     zeus: 0
   },
   witchdoctor: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
@@ -12209,7 +12209,7 @@ exports.counters = {
     zeus: 0
   },
   zeus: {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,

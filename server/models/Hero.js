@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var heroSchema = new mongoose.Schema({
   name: String,
-  abbadon: {type: Number, default: 0},
+  abaddon: {type: Number, default: 0},
   alchemist: {type: Number, default: 0},
   ancientapparition: {type: Number, default: 0},
   antimage: {type: Number, default: 0},

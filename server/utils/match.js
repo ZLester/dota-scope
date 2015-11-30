@@ -5,7 +5,7 @@ var Promise = require("bluebird");
 
 var generateEmptyResults = function() {
   return {
-    abbadon: 0,
+    abaddon: 0,
     alchemist: 0,
     ancientapparition: 0,
     antimage: 0,
