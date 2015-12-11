@@ -9,7 +9,7 @@
   "scripts": {
     "start": "npm run build && node src/server/server.js",
     "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
-    "build": "webpack --config webpack-production.config.js --progress --colors",
+    "build": "webpack --config webpack-production.config.js",
     "test": "jest",
     "seed": "node src/server/utils/seedDatabase.js",
     "populate": "node src/server/utils/populateDatabase.js"
