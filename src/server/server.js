@@ -13,7 +13,7 @@ mongoose.connect(mongoUri);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', apiRouter);
-app.use(express.static(path.join(__dirname, "../build")));
+app.use(express.static(path.join(__dirname, "../../build")));
 
-console.log('DotaScope Listening on port ' + port);
+console.log('DotaScope Listening on Port ' + port);
 app.listen(port);

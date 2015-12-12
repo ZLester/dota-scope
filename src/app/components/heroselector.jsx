@@ -1,22 +1,22 @@
-var React = require('react');
-var cx = require('classnames');
-var generateClasses = require('./utils/generateclasses.js');
+const React = require('react');
+const cx = require('classnames');
+const generateClasses = require('./utils/generateclasses.js');
 
-var HeroSelector = React.createClass({
+const HeroSelector = React.createClass({
   propTypes: {
     selectorStates: React.PropTypes.object.isRequired,
     buttonStates: React.PropTypes.object.isRequired,
     handleButtonMouseEnter: React.PropTypes.func.isRequired,
-    handleButtonMouseLeave: React.PropTypes.func.isRequired
+    handleButtonMouseLeave: React.PropTypes.func.isRequired,
   },
   render () {
-    var slotZeroClasses = generateClasses.slot('slotZero', this);
-    var slotOneClasses = generateClasses.slot('slotOne', this);
-    var slotTwoClasses = generateClasses.slot('slotTwo', this);
-    var slotThreeClasses = generateClasses.slot('slotThree', this);
-    var slotFourClasses = generateClasses.slot('slotFour', this);
-    var submitHeroesClasses = generateClasses.submitButton('submitHeroes', this);
-    var clearHeroesClasses = generateClasses.clearButton('clearHeroes', this);
+    let slotZeroClasses = generateClasses.slot('slotZero', this);
+    let slotOneClasses = generateClasses.slot('slotOne', this);
+    let slotTwoClasses = generateClasses.slot('slotTwo', this);
+    let slotThreeClasses = generateClasses.slot('slotThree', this);
+    let slotFourClasses = generateClasses.slot('slotFour', this);
+    let submitHeroesClasses = generateClasses.submitButton('submitHeroes', this);
+    let clearHeroesClasses = generateClasses.clearButton('clearHeroes', this);
     return (
       <div className='heroSelectorWrapper'>
         <table className='heroSelector'>
@@ -36,7 +36,7 @@ var HeroSelector = React.createClass({
         </div>
       </div>
     )
-  }
+  },
 });
 
 module.exports = HeroSelector;

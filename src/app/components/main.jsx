@@ -1,11 +1,11 @@
-var React = require('react');
-var Title = require('./title.jsx');
-var HeroHover = require('./herohover.jsx');
-var HeroGrid = require('./herogrid.jsx');
-var HeroSelector = require('./heroselector.jsx');
-var $ = require('jquery');
+const React = require('react');
+const Title = require('./title.jsx');
+const HeroHover = require('./herohover.jsx');
+const HeroGrid = require('./herogrid.jsx');
+const HeroSelector = require('./heroselector.jsx');
+const $ = require('jquery');
 
-var App = React.createClass({
+const Main = React.createClass({
   getInitialState () {
     return ({
       // Initial/Default State for Hero MouseOver Message
@@ -17,27 +17,27 @@ var App = React.createClass({
         slotOne: {hero: '', hover: false},
         slotTwo: {hero: '', hover: false},
         slotThree: {hero: '', hover: false},
-        slotFour: {hero: '', hover: false}
+        slotFour: {hero: '', hover: false},
       },
       // Initial/Default States for Submit/Clear Buttons
       buttonStates: {
         submitHeroes: {hover: false},
-        clearHeroes: {hover: false}
+        clearHeroes: {hover: false},
       },
       displayGrid: true,
       // Initial/Default States for Hero Counters
       counterStates: {
         greatCounters: [],
         counters: [],
-        avoid: []
-      }
+        avoid: [],
+      },
     });
   },
   handleHeroClick (hero) {
     // Mutates here, refactor later
-    var newStates = this.state.selectorStates;
+    let newStates = this.state.selectorStates;
     // Check if hero is already in one of the slots
-    for (var slotI in this.state.selectorStates) {
+    for (let slotI in this.state.selectorStates) {
       // If so, remove, generate new states and set
       if (this.state.selectorStates[slotI].hero === hero) {
         newStates[slotI].hero = '';
@@ -46,7 +46,7 @@ var App = React.createClass({
       }
     }
     // If not, iterate over slots again
-    for (var slotJ in this.state.selectorStates) {
+    for (let slotJ in this.state.selectorStates) {
       // Add hero to first empty slot encountered
       if (this.state.selectorStates[slotJ].hero === '') {
         // Generate new state object and set
@@ -68,7 +68,7 @@ var App = React.createClass({
   handleSlotClick (slot) {
     // Mutates here, refactor later
     if (this.state.displayGrid) {
-      var newStates = this.state.selectorStates;
+      let newStates = this.state.selectorStates;
       newStates[slot].hero = '';
       this.setState({selectorStates: newStates});
     }
@@ -76,21 +76,21 @@ var App = React.createClass({
   // MouseEnter Listener for HeroGrid 
   handleSlotMouseEnter (slot) {
     if (this.state.selectorStates[slot].hero !== '') {
-      var newStatesSelector = this.state.selectorStates;
-      var newStatesHeroMouseOver = this.state.selectorStates[slot].hero;
+      let newStatesSelector = this.state.selectorStates;
+      let newStatesHeroMouseOver = this.state.selectorStates[slot].hero;
       newStatesSelector[slot].hover = true;
       this.setState({selectorStates: newStatesSelector, heroMouseOver: newStatesHeroMouseOver});
     }
   },
   // MouseLeave Listener for HeroGrid 
   handleSlotMouseLeave (slot) {
-    var newStates = this.state.selectorStates;
+    let newStates = this.state.selectorStates;
     newStates[slot].hover = false;
     this.setState({selectorStates: newStates, heroMouseOver: 'Select a Hero'});
   },
   // Temporary, refactor as state
   submitIsEnabled () {
-    for (var state in this.state.selectorStates) {
+    for (let state in this.state.selectorStates) {
       if (this.state.selectorStates[state].hero !== '') {
         return true;
       }
@@ -100,7 +100,7 @@ var App = React.createClass({
   // Temporary, refactor as state
   clearIsEnabled () {
     if (this.state.displayGrid && this.clearIsEnabled) {
-      for (var state in this.state.selectorStates) {
+      for (let state in this.state.selectorStates) {
         if (this.state.selectorStates[state].hero !== '') {
           return true;
         }
@@ -112,9 +112,9 @@ var App = React.createClass({
   // Click Listener for Submit Button
   handleSubmitClick () {
     if (this.state.displayGrid && this.submitIsEnabled()) {
-      var url = 'api/match?';
-      var queryUrl = Object.keys(this.state.selectorStates).reduce((urlStr, state) => {
-        var heroStr = this.state.selectorStates[state].hero || 'empty';
+      let url = 'api/match?';
+      let queryUrl = Object.keys(this.state.selectorStates).reduce((urlStr, state) => {
+        let heroStr = this.state.selectorStates[state].hero || 'empty';
         urlStr += (state + '=' + heroStr.toLowerCase() + '&');
         return urlStr;
       }, url);
@@ -130,12 +130,12 @@ var App = React.createClass({
   // Click Listener for Clear Button
   handleClearClick () {
     if (this.clearIsEnabled()) {
-      var newStates = {
+      let newStates = {
         slotZero: {hero: '', hover: false},
         slotOne: {hero: '', hover: false},
         slotTwo: {hero: '', hover: false},
         slotThree: {hero: '', hover: false},
-        slotFour: {hero: '', hover: false}
+        slotFour: {hero: '', hover: false},
       }
       this.setState({selectorStates: newStates});
     }
@@ -143,13 +143,13 @@ var App = React.createClass({
   // Hover Listener for Submit & Clear Buttons
   handleButtonMouseEnter(button) {
     // Mutates here, refactor later
-    var newStates = this.state.buttonStates;
+    let newStates = this.state.buttonStates;
     newStates[button].hover = true;
     this.setState({buttonStates: newStates});
   },
   handleButtonMouseLeave(button) {
     // Mutates here, refactor later
-    var newStates = this.state.buttonStates;
+    let newStates = this.state.buttonStates;
     newStates[button].hover = false;
     this.setState({buttonStates: newStates});
   },
@@ -180,7 +180,7 @@ var App = React.createClass({
           hoverState={this.state.heroMouseOver} />
       </div>
     );
-  }
+  },
 });
 
-module.exports = App;
+module.exports = Main;

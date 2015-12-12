@@ -1,8 +1,8 @@
-var React = require('react');
+const React = require('react');
 
-var HeroHover = React.createClass({
+const HeroHover = React.createClass({
   propTypes: {
-    heroMouseOver: React.PropTypes.string.isRequired
+    heroMouseOver: React.PropTypes.string.isRequired,
   },
   render () {
     return (
@@ -10,7 +10,7 @@ var HeroHover = React.createClass({
         <h2 className='heroHover'>{this.props.heroMouseOver}</h2>
       </div>
     )
-  }
+  },
 });
 
 module.exports = HeroHover;

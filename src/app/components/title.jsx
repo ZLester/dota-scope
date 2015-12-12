@@ -1,13 +1,13 @@
-var React = require('react');
+const React = require('react');
 
-var Title = React.createClass({
+const Title = React.createClass({
   render () {
     return (
       <div className="titleWrapper">
         <h1 className="title">Dota Scope</h1>
       </div>
     )
-  }
+  },
 });
 
 module.exports = Title;

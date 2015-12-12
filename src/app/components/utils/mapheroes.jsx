@@ -1,11 +1,11 @@
-var React = require('react');
-var generateClasses = require('./generateclasses.js');
-var heroNames = require('./heronames.js');
+const React = require('react');
+const generateClasses = require('./generateclasses.js');
+const heroNames = require('./heronames.js');
 
 exports.generateSelectGrid = function(data, context) {
-  var result = data.map(function (row, index) {
-      var heroes = row.map(function (hero) {
-        var heroClassNames = generateClasses.hero(hero, this);
+  let result = data.map(function (row, index) {
+      let heroes = row.map(function (hero) {
+        let heroClassNames = generateClasses.hero(hero, this);
         return (
           <td 
             className={heroClassNames}
@@ -24,9 +24,8 @@ exports.generateSelectGrid = function(data, context) {
 };
 
 exports.generateResultsGrid = function(data, context) {
-
-  var tds = data.map(function (hero) {
-    var heroClassNames = generateClasses.result(hero, context);
+  let tds = data.map(function (hero) {
+    let heroClassNames = generateClasses.result(hero, context);
     return (
       <td
         className={heroClassNames}
@@ -36,9 +35,9 @@ exports.generateResultsGrid = function(data, context) {
       </td>
     );
   }, context)
-  var result = [];
-  var row = [];
-  for (var i = 0; i < tds.length; i++) {
+  let result = [];
+  let row = [];
+  for (let i = 0; i < tds.length; i++) {
     row.push(tds[i]);
     if (row.length === 4 || i === tds.length - 1)  {
       result.push(<tr>{row}</tr>);
@@ -46,4 +45,4 @@ exports.generateResultsGrid = function(data, context) {
     }
   }
   return result;
-}
+};

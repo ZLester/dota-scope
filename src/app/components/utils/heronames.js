@@ -4,14 +4,14 @@ exports.radiantStr = [
   ['Huskar', 'Alchemist', 'Brewmaster', 'Treant Protector'],
   ['Io', 'Centaur Warrunner', 'Timbersaw', 'Bristleback'],
   ['Tusk', 'Elder Titan', 'Legion Commander', 'Earth Spirit'],
-  ['Phoenix']
+  ['Phoenix'],
 ];
 
 exports.direStr = [
   ['Axe', 'Pudge', 'Sand King', 'Slardar'],
   ['Tidehunter', 'Wraith King', 'Lifestealer', 'Night Stalker'],
   ['Doom', 'Spirit Breaker', 'Lycan', 'Chaos Knight'],
-  ['Undying', 'Magnus', 'Abaddon']
+  ['Undying', 'Magnus', 'Abaddon'],
 ];
 
 exports.radiantAgi = [
@@ -19,14 +19,14 @@ exports.radiantAgi = [
   ['Morphling', 'Phantom Lancer', 'Vengeful Spirit', 'Riki'],
   ['Sniper', 'Templar Assassin', 'Luna', 'Bounty Hunter'],
   ['Ursa', 'Gyrocopter', 'Lone Druid', 'Naga Siren'],
-  ['Troll Warlord', 'Ember Spirit']
+  ['Troll Warlord', 'Ember Spirit'],
 ];
 
 exports.direAgi = [
   ['Bloodseeker', 'Shadow Fiend', 'Razor', 'Venomancer'],
   ['Faceless Void', 'Phantom Assassin', 'Viper', 'Clinkz'],
   ['Broodmother', 'Weaver', 'Spectre', 'Meepo'],
-  ['Nyx Assassin', 'Slark', 'Medusa', 'Terrorblade']
+  ['Nyx Assassin', 'Slark', 'Medusa', 'Terrorblade'],
 ];
 
 exports.radiantInt = [
@@ -34,7 +34,7 @@ exports.radiantInt = [
   ['Zeus', 'Lina', 'Shadow Shaman', 'Tinker'],
   ['Nature\'s Prophet', 'Enchantress', 'Jakiro', 'Chen'],
   ['Silencer', 'Ogre Magi', 'Rubick', 'Disruptor'],
-  ['Keeper of the Light', 'Skywrath Mage', 'Oracle', 'Techies']
+  ['Keeper of the Light', 'Skywrath Mage', 'Oracle', 'Techies'],
 ];
 
 exports.direInt = [
@@ -42,7 +42,7 @@ exports.direInt = [
   ['Enigma', 'Necrophos', 'Warlock', 'Queen of Pain'],
   ['Death Prophet', 'Pugna', 'Dazzle', 'Leshrac'],
   ['Dark Seer', 'Batrider', 'Ancient Apparition', 'Invoker'],
-  ['Outworld Devourer', 'Shadow Demon', 'Visage', 'Winter Wyvern']
+  ['Outworld Devourer', 'Shadow Demon', 'Visage', 'Winter Wyvern'],
 ];
 
 exports.nameHash = {
@@ -155,5 +155,5 @@ exports.nameHash = {
   winterwyvern: 'Winter Wyvern',
   io: 'Io',
   witchdoctor: 'Witch Doctor',
-  zeus: 'Zeus'
+  zeus: 'Zeus',
 };

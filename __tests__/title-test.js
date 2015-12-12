@@ -1,27 +1,22 @@
- // __tests__/CheckboxWithLabel-test.js
- jest.dontMock('../client/app.jsx');
+jest.dontMock('../src/app/components/title.jsx');
 
- var React = require('react');
- var ReactDOM = require('react-dom');
- var TestUtils = require('react-addons-test-utils');
- var Title = require('../client/title.jsx');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const TestUtils = require('react-addons-test-utils');
+const Title = require('../src/app/components/title.jsx');
 
- describe('Title', () => {
+describe('Title', () => {
 
-   it('Has the correct default title', () => {
+  it('Has the correct default title', () => {
 
-    // Render app into doument
-    var app = TestUtils.renderIntoDocument(
-      <Title />
-    );
+   var title = TestUtils.renderIntoDocument(
+     <Title />
+   );
 
-    var appNode = ReactDOM.findDOMNode(app);
-
-    // Verify that it has 'Select a Hero' as the default heroMouseOver state
-    expect(appNode.textContent).toEqual('Dota Scope');
-
-   });
-
- });
+   var appNode = ReactDOM.findDOMNode(title);
    
+   expect(appNode.textContent).toEqual('Dota Scope');
 
+  });
+
+});

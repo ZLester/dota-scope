@@ -1,7 +1,10 @@
+html {
+  font-family: 'Marcellus SC', serif;
+}
+
 body {
   background-color: #000;
   color: #FFF;
-  font-family: 'Marcellus SC', serif;
 }
 
 .title {
