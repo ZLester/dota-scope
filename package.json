@@ -37,7 +37,7 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "request": "^2.67.0",
-    "webpack": "^1.12.9"
+    "webpack": "^1.10.5"
   },
   "devDependencies": {
     "babel-core": "^5.8.21",
