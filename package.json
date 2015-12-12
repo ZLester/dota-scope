@@ -6,13 +6,14 @@
     "type": "git",
     "url": ""
   },
+  "main": "./src/app/app.jsx",
   "scripts": {
     "start": "node src/server/server.js",
     "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "test": "jest",
     "seed": "node src/server/utils/seedDatabase.js",
     "populate": "node src/server/utils/populateDatabase.js",
-    "postinstall": "webpack --config ./webpack-production.config.js --progress --colors"
+    "postinstall": "webpack --config webpack-production.config.js --progress --colors"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
@@ -37,7 +38,7 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "request": "^2.67.0",
-    "webpack": "^1.10.5"
+    "webpack": "^1.12.9"
   },
   "devDependencies": {
     "babel-core": "^5.8.21",
