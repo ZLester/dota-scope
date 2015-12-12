@@ -13,7 +13,6 @@
     "test": "jest",
     "seed": "node src/server/utils/seedDatabase.js",
     "populate": "node src/server/utils/populateDatabase.js"
-    //"postinstall": "webpack --config webpack.config.js --progress --colors"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
