@@ -8,7 +8,7 @@
   },
   "main": "./src/app/app.jsx",
   "scripts": {
-    "start": "webpack && node src/server/server.js",
+    "start": "node src/server/server.js",
     "build": "webpack",
     "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "test": "jest",
