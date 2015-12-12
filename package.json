@@ -48,9 +48,10 @@
     "eslint-loader": "^1.0.0",
     "eslint-plugin-react": "^3.2.2",
     "html-webpack-plugin": "^1.6.1",
+    "react-addons-test-utils": "^0.14.2",
     "react-hot-loader": "^1.2.8",
     "transfer-webpack-plugin": "^0.1.4",
-    "react-addons-test-utils": "^0.14.2",
+    "webpack": "^1.12.9",
     "webpack-dev-server": "^1.10.1"
   }
 }
