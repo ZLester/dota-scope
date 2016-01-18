@@ -8,10 +8,6 @@
   },
   "main": "./src/app/app.jsx",
   "scripts": {
-    "start": "node src/server/server.js",
-    "build": "webpack",
-    "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
-  "scripts": {
     "start": "npm run build && node src/server/server.js",
     "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "build": "webpack --config webpack-production.config.js --progress --colors",

@@ -34,8 +34,7 @@ const Main = React.createClass({
     });
   },
   handleHeroClick (hero) {
-    // Mutates here, refactor later
-    let newStates = this.state.selectorStates;
+    let newStates = Object.assign({}, this.state.selectorStates);
     // Check if hero is already in one of the slots
     for (let slotI in this.state.selectorStates) {
       // If so, remove, generate new states and set
@@ -66,9 +65,8 @@ const Main = React.createClass({
   },
   // Click Listener for Selected Hero Portrait
   handleSlotClick (slot) {
-    // Mutates here, refactor later
     if (this.state.displayGrid) {
-      let newStates = this.state.selectorStates;
+      let newStates = Object.assign({}, this.state.selectorStates);
       newStates[slot].hero = '';
       this.setState({selectorStates: newStates});
     }
@@ -142,14 +140,12 @@ const Main = React.createClass({
   },
   // Hover Listener for Submit & Clear Buttons
   handleButtonMouseEnter(button) {
-    // Mutates here, refactor later
-    let newStates = this.state.buttonStates;
+    let newStates = Object.assign({}, this.state.buttonStates);
     newStates[button].hover = true;
     this.setState({buttonStates: newStates});
   },
   handleButtonMouseLeave(button) {
-    // Mutates here, refactor later
-    let newStates = this.state.buttonStates;
+    let newStates = Object.assign({}, this.state.buttonStates);
     newStates[button].hover = false;
     this.setState({buttonStates: newStates});
   },
