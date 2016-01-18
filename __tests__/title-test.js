@@ -18,5 +18,4 @@ describe('Title', () => {
    expect(appNode.textContent).toEqual('Dota Scope');
 
   });
-
 });
